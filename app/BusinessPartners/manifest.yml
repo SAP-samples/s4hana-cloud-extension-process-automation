@@ -1,0 +1,13 @@
+---
+applications:
+- name: BusinessPartnerValidation-ui
+  path: .
+  memory: 128M
+  buildpack: nodejs_buildpack
+  env:
+    destinations: >
+      [
+        {"name": "srv-binding", "url":<URL of srv application>, "forwardAuthToken": true}
+      ]
+  services:
+  - BusinessPartnerValidation-xsuaa
