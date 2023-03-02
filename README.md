@@ -84,6 +84,6 @@ No known issues.
 In case you find a bug, or you need additional support, please [open an issue](https://github.com/SAP-samples/s4hana-cloud-extension-process-automation/issues/new) here in GitHub.
 
 ## License
-Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
+Copyright (c) 2023 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
 
 
