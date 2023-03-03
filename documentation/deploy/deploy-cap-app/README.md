@@ -40,7 +40,7 @@ Now we will setup the SAP Business Application Studio and use it to develop our 
  
 9.	 Then clone the project from your personal GitHub and enter username and token to execute the command: 
    ``` 
-   git clone https://github.com/SAP-samples/cloud-extension-s4hana-business-process.git
+   git clone https://github.com/SAP-samples/s4hana-cloud-extension-process-automation.git
    ``` 
  
 10.	Click on *File* in the menu on the top and choose *Open Workspace* in the drop-down.
