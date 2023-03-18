@@ -1,4 +1,4 @@
-# Efficient SAP S/4HANA Side-by-Side Extension with SAP Build Process Automation
+# Extend SAP S/4HANA with SAP Build Process Automation
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/s4hana-cloud-extension-process-automation)](https://api.reuse.software/info/github.com/SAP-samples/s4hana-cloud-extension-process-automation)
 ## Description
 The main intent of this scenario is to put an event-driven architecture into action by automating business processes through SAP Build Process Automation and also by building an extension application on SAP Business Technology Platform using SAP Cloud Application Programming Model (CAP) which consumes and further processes the SAP S/4HANA On-premise business events.
