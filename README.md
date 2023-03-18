@@ -47,8 +47,8 @@ The tutorial focus on the following aspects:
  * Integrate the Cloud Application Programming to [SAP Build Work Zone, Standard Edition](https://help.sap.com/docs/WZ_STD).
 
 ## Requirements
-* SAP S/4HANA on premise system.
-* SAP Business Technology Platform account
+* SAP S/4HANA On-Premise System.
+* SAP Business Technology Platform Account
 
 ### For local development you would require the following:
 * [Node js](https://nodejs.org/en/download/)
@@ -66,7 +66,7 @@ The tutorial focus on the following aspects:
 
 * Follow the below steps for quick start or start the [SAP Discovery Center Mission](https://discovery-center.cloud.sap/missions).
 
-    |   **Step**  |  **Description** | 
+    |  **Step**  |  **Description** | 
     | ----------- | ----------- | 
     | **Step 1**: [Prerequisites](./documentation/prepare/README.md) | Prepare your systems and accounts. | 
     | **Step 2**: [Setup](./documentation/set-up/README.md) | Configure and Subscribe instances like SAP HANA Cloud, SAP Build Process Automation, setup connectivity between SAP S/4HANA and SAP BTP and so on. | 
