@@ -1,4 +1,4 @@
-# Create SAP HANA Cloud Service Instance and Subscribe to SAP Build Process Automation in SAP BTP
+# Create SAP HANA Cloud Service Instance in SAP BTP
 
 ### Create a SAP HANA Cloud Service Instance
 

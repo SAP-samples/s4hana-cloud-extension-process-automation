@@ -1,4 +1,4 @@
-# Discover the SAP Cloud Application Programming Model (CAP)
+# Learn about SAP Cloud Application Programming Model (CAP)
 
 SAP Cloud Application Programming Model is a framework of languages, libraries and tools to greatly speed up the development of enterprise-grade applications.
 

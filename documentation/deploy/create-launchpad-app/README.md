@@ -1,4 +1,4 @@
-# Integrate the Application to Central Fiori Launchpad
+# Integrate the Application to SAP Build Work Zone, Standard Edition
 
 ## Introduction
 
@@ -6,7 +6,7 @@ In this section, the application will be connected to Central Fiori Launchpad to
 
 **Persona:** BTP Developer
 
-###  Integrate with Central Fiori Launchpad
+###  Integrate with SAP Build Work Zone, Standard Edition
 
 1.  Open your Subaccount and search for *Instances and Subscriptions*
 2.  Search for the application *SAP Build Work Zone, standard edition* and click on icon to open

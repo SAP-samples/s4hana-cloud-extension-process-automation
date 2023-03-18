@@ -4,7 +4,7 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
 ## 1. Download API Specification for API_BUSINESS_PARTNER.
 
-1. Open SAP API Business Hub. Find the [Business Partner (A2X)](https://api.sap.com/api/API_BUSINESS_PARTNER/overview) API for SAP S/4HANA.
+1. Login to [SAP API Business Hub](https://api.sap.com). Find the [Business Partner (A2X)](https://api.sap.com/api/API_BUSINESS_PARTNER/overview) API for SAP S/4HANA.
 
 2. Choose **API Specification** and download the JSON file.
 
@@ -49,7 +49,7 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
     Once the action project is created, the action editor will automatically open. 
 
-5. In the **Actions Type** dropdown, choose **GET** **POST** **PATCH**.
+5. In the **Actions Type** dropdown, choose **GET**, **POST** and **PATCH**.
 
     ![action create](./images/action_create_action-filter.png)
 
@@ -59,17 +59,22 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
     | ----------- | ----------- | -----------    |
     | **GET**  | **/A_BusinessPartner** | **Retrieves business partner general data** |
     | **POST**     | **/A_BusinessPartner**  | **Create a new business partner record.** |
-    | **PATCH**     | **/A_Supplier('{Supplier}')**  | **Updates supplier general data.** |
     
-
     ![action create](./images/action-post.png)
 
     ![action create](./images/action-get.png)
 
+7. In the Action **Supplier**, choose below actions.
+
+    | **Method**    |  **Action**    | **Description** |
+    | ----------- | ----------- | -----------    |
+    | **PATCH**     | **/A_Supplier('{Supplier}')**  | **Updates supplier general data.** |
+
     ![action create](./images/action-patch.png)
 
+8. Choose **Add**
 
-7. Now, you will update the input/output fields of the action project **Creates a new business partner record** to keep only the mandatory fields that are needed to **create** the supplier. To select the Input fields, do the following:
+9. Now, you will update the input/output fields of the action project **Creates a new business partner record** to keep only the mandatory fields that are needed to **create** the supplier. To select the Input fields, do the following:
 
     - Sort Key in ascending order by clicking on the key column and select the Sort Ascending option.
 
@@ -95,7 +100,7 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
     
       ![action create](./images/action-remove.png)
 
-8. Repeat the previous steps to remove the unwanted field in **to_BusinessPartnerAddress**
+10. Repeat the previous steps to remove the unwanted field in **to_BusinessPartnerAddress**
 
     - Select All the fields **to_BusinessPartnerAddress** by clicking on the checkbox of Key column.
     - Uncheck the following fields so that they are added as Input.
@@ -110,7 +115,7 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
         ![action create](./images/action-bp-address-cancel.png)
         
-9. Repeat the previous steps to remove the unwanted field in **to_BusinessPartnerRole**
+11. Repeat the previous steps to remove the unwanted field in **to_BusinessPartnerRole**
 
     - Select All the fields **to_BusinessPartnerRole** by clicking on the checkbox of Key column.
     - Uncheck the following fields so that they are added as Input.
@@ -121,42 +126,43 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
         ![action create](./images/to_role.png)        
 
-10. Choose **BusinessPartnerCategory**.
+12. Choose **BusinessPartnerCategory**.
     - In the **Static** field, choose **YES**.
     - In the **Value** field, enter **2**.
 
     ![action create](./images/action_create_post_newbp_category_static.png)
 
-11. Choose **Language**.
+13. Choose **Language**.
     - In the **Static** field, choose **YES**.
     - In the **Value** field, enter **en**.
 
     ![action create](./images/action_create_post_newbp_lang_static.png)
     
-12. Choose **Save**.
+14. Choose **Save**.
 
-13. You final actions **Creates a new business partner record** will looks like below.
+15. Your final actions **Creates a new business partner record** will look like below.
 
     ![action create](./images/action-post-final.png)
 
-14.  Now, you will update the input/output fields of the  to keep only the mandatory fields that are needed to **update** the supplier. To select the Input fields, do the following:
+16.  Now, you will update the input/output fields of the  to keep only the mandatory fields that are needed to **update** the supplier. To select the Input fields, do the following:
 
-15. Select All the fields by clicking on the checkbox of Key column.
+17. Select All the fields by clicking on the checkbox of Key column.
 
-16.  Uncheck the following fields so that they are added as Input.
+18. Uncheck the following fields so that they are added as Input.
 
         | **Keys selected as Input** | 
         | ----------- | 
         | **PurchasingIsBlocked**    |
-        | **PurchasingIsBlocked**     |
+        | **PaymentIsBlockedForSupplier** |
         
 
-![action create](./images/action-patch-cancel.png)
+    ![action create](./images/action-patch-cancel.png)
 
-17. You final actions **Updates supplier general data** will looks like below.
+19. Your final actions **Updates supplier general data** will look like below.
 
     ![action create](./images/action-patch-final.png)
-        
+
+20. Choose **Save**
         
 ## 4. Update X-CSRF of Post Actions
 

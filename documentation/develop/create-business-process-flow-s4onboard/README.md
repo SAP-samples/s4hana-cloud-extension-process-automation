@@ -1,4 +1,4 @@
-# Configure Business Process for **Supplier Approval in SAP S/4HANA**
+# Configure Business Process for Supplier Approval in SAP S/4HANA
 
 This Processes will automate the onboarding of supplier created from supplier request form in SAP S/4HANA.
 
@@ -43,11 +43,10 @@ This Processes will automate the onboarding of supplier created from supplier re
 4. Choose **Environment Variables**.
 
     - In the **Identifier** field, enter **bupa**.
-    - In the **Type** dropdown menu, select **Destination**.
+    - In the **Type** dropdown menu, choose **Destination**.
+    - Choose **Create**.
 
-5. Choose **Create**.
-
-    ![spa business create](./images/process_trigger_env.png)
+        ![spa business create](./images/process_trigger_env.png)
 
 ## 3. Create Decisions
 
@@ -150,7 +149,7 @@ After the user approves or rejects the request, the next step is to create notif
 
     ![spa confirm](./images/spa-supp-conf-entry.png)
 
-5. You will now design the **SSupplier Confirmation Form** with available layout and input fields options. First, drag-and-drop the form layout fields and enter the given names and field settings as below:
+5. You will now design the **Supplier Confirmation Form** with available layout and input fields options. First, drag-and-drop the form layout fields and enter the given names and field settings as below:
 
     | **Form Fields** |  **Field Settings with Label**    | 
     | ----------- | ----------- | 
@@ -231,8 +230,6 @@ A process condition routes the business process based on certain criteria. These
 
 10. In the **Projects** field, enter **businesspartner**.
 
-    ![spa process](./images/spa-process-aaction-lib-browse.png)
-
 11. Choose actions **Create a new business partner record** and choose **Add**.
 
     ![spa process](./images/spa-process-aaction-lib-bppost.png)
@@ -264,7 +261,7 @@ A process condition routes the business process based on certain criteria. These
 
     ![spa process](./images/spa-process-action-lib-supplier-patch.png)
  
-15. In the action **Update Suplier General Data**, choose **General**.
+15. In the action **Update Supplier General Data**, choose **General**.
     - In the **Destination Variable** field, choose **bupa**.
 
     ![spa process](./images/spa-process-action-lib-supplier-general.png)
@@ -273,6 +270,8 @@ A process condition routes the business process based on certain criteria. These
     - In the **Supplier** field, choose **BusinessPartner** of actions **create a new business partner record**.
     - In the **PaymentBlockedForSupplier**, choose **BusinessPartnerIsBlocked** of actions **create a new business partner record**.
     - In the **PurchasingIsBlocked**, choose **BusinessPartnerIsBlocked** of actions **create a new business partner record**.
+
+    > In updated api spec, updated name of PaymentBlockedForSupplier is **Payment block**, PurchasingIsBlocked is **Purch. Block** and BusinessPartnerIsBlocked is **Central Block**
 
     ![spa process](./images/spa-process-action-lib-supplier-input.png)
 
@@ -308,7 +307,7 @@ A process condition routes the business process based on certain criteria. These
 
     ![spa process](./images/spa-process-aaction-lib-supplier-conf-input-bind2.png)
 
-    - Below is the final layout of editor.
+20.  Below is the final layout of editor.
 
     ![spa process](./images/spa-process-final.png)
 

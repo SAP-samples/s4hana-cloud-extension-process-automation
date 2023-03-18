@@ -100,8 +100,8 @@ module.exports = async (srv) => {
       "context": {
       "supplier": resultJoin.businessPartnerId,
       "suppliername": resultJoin.businessPartnerName,
-      "paymentIsBlock": false,
-      "purchaseIsBlock": false,
+      "paymentisblock": false,
+      "purchaseisblock": false,
       "country": resultJoin.country  
       }    
     }

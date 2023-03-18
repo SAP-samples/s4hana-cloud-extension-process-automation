@@ -5,12 +5,12 @@
 ## Introduction
 
 
-For running the Extend SAP S/4HANA on SAP BTP Using SAP Netweaver Event Enablement Add-on mission, you will need the following services in your account in SAP Business Technology Platform (SAP BTP).
+For running the Extend SAP S/4HANA with SAP Build Process Automation mission, you will need the following services in your account in SAP Business Technology Platform (SAP BTP).
 
 * SAP Business Application Studio
 * SAP Event Mesh
 * SAP BTP, Cloud Foundry runtime
-* SAP Launchpad service
+* SAP Build Work Zone, standard edition
 * SAP HANA Cloud for SAP BTP
 * SAP Build Process Automation
 * SAP Continuous Integration & Delivery service (optional)
@@ -112,7 +112,7 @@ Services like **Application Autoscaler**, **Application Logging**, and the **SAP
     Go to **Instances and Subscriptions** and choose the **Subscription** tab. Check if the following subscriptions are enabled:
     * SAP Business Application Studio
     * SAP Event Mesh
-    * SAP Launchpad service
+    * SAP SAP Build Work Zone, standard edition
     * SAP Continuous Integration & Delivery (only when selected in the booster)   
     
     ![Booster](./images/booster-12.png)
