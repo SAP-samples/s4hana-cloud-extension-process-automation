@@ -44,6 +44,7 @@ The tutorial focus on the following aspects:
  * Developing an application on [SAP BTP](https://help.sap.com/docs/btp?version=Cloud) using [Cloud Application Programming Model](https://cap.cloud.sap/docs/).
  * Implementing a [SAP Fiori elements](https://help.sap.com/docs/SAP_FIORI_tools) UI.
  * Integrating [SAP Build Process Automation](https://help.sap.com/docs/PROCESS_AUTOMATION?version=Cloud) with [Cloud Application Programming Model](https://cap.cloud.sap/docs/).
+ * Integrate the Cloud Application Programming to [SAP Build Work Zone, Standard Edition](https://help.sap.com/docs/WZ_STD).
 
 ## Requirements
 * SAP S/4HANA on premise system.
@@ -67,10 +68,10 @@ The tutorial focus on the following aspects:
 
     |   **Step**  |  **Description** | 
     | ----------- | ----------- | 
-    | **Step 1**: [Prerequisites](./documentation/prepare/README.md) | Prepare your systems such as exploring APIs and events, configure global account using Boosters and so on.| 
+    | **Step 1**: [Prerequisites](./documentation/prepare/README.md) | Prepare your systems and accounts. | 
     | **Step 2**: [Setup](./documentation/set-up/README.md) | Configure and Subscribe instances like SAP HANA Cloud, SAP Build Process Automation, setup connectivity between SAP S/4HANA and SAP BTP and so on. | 
     | **Step 3**: [Configure Business Processes](./documentation/develop/README.md)  | Configure Actions, Decisions and Business Processes using SAP Build Process Automation. |
-    | **Step 4**: [Deploy Cloud Application Programming(CAP) and Integrate with Central Fiori Launchpad](./documentation/deploy/README.md)| Develop and Deploy CAP Application and integrate with launchpad using SAP Build Work Zone |
+    | **Step 4**: [Deploy Cloud Application Programming(CAP) and Integrate with Central Fiori Launchpad](./documentation/deploy/README.md)| Develop and Deploy CAP Application and integrate Application with SAP Build Work Zone, Standard Edition |
     | **Step 6**: [Configure Event-Based Communication between SAP S/4HANA and SAP Event Mesh](./documentation/deploy/configure-channel/README.md) | Configure outbound messaging in SAP S/4HANA and add bindings. |
     | **Step 7**: [Run the Example Scenario](./documentation/deploy/run-e2e/README.md) | Run End to End scenario |
 
