@@ -56,6 +56,8 @@ An output data type describes the data structure that can be used as an output p
 
 ![data type create](./images/data_type_lobby_input_role.png)
 
+7. Choose **Save**.
+
 ## 3. Create Decision
 
 A decision consists of one or more policies. Each policy consists of a collection of rules. They are used to automate the decision-making parts of a business process. After you create a decision, define your business logic by adding rules to the policy. There are two types of rules:
@@ -78,16 +80,16 @@ A decision consists of one or more policies. Each policy consists of a collectio
 4. Choose **Add Input Parameter** to configure the input.
 
 5. Configure the input parameter:
-    - In the **Name** field, enter **country**
+    - In the **Name** field, enter **Input**
     - In the **Description** field, enter **input**
     - In the **Type** field, choose **CentralBlockInput**
 
     ![Block create](./images/decision_input_param.png)
 
-6. Choose **Add Output Parameter** to configure teh output.
+6. Choose **Add Output Parameter** to configure the output.
 
 7. Configure Output Parameter:
-    - In the **Name** field, enter **approver**
+    - In the **Name** field, enter **Output**
     - In the **Description** field, enter **output**
     - In the **Type** field, **CentralBlockOutput**
 
@@ -124,7 +126,8 @@ A decision consists of one or more policies. Each policy consists of a collectio
 
     ![Block create](./images/decision_rules_output_cond.png)
 
-14. Review and choose **Finish** button to create the rule.
+14. Review and choose **Finish** button to create the rule. 
+    > In latest release, Finish bitton is renamed as **Create**
 
     ![Block create](./images/decision_rules_add_cond_save.png)
 

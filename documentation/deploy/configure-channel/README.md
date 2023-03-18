@@ -5,18 +5,6 @@ In this how-to guide, you will establish a connection between your SAP S/4HANA o
 
 See section [Creating RFC Destination](https://help.sap.com/docs/r/810dfd34f2cc4f39aa8d946b5204fd9c/1809.000/en-US/12559a8c26f34e0bbe8c6d82b7501424.html) on SAP Help Portal on how to configure trust and create the RFC destination.
 
-### Configure Endpoint
-
-1. Open your browser and navigate to your subaccount in SAP BTP Cockpit.
-
-2. Navigate to **Overview** and click on **consoleURL** under **Kyma**.
-
-3. On the Kyma Console, navigate to your **namespace** and then to **secrets**.
-
-    ![messaging-secret](./images/messaging-secret.png)
-
-4. Choose **decode secret** and copy the respective values to the `event-mesh-template.json` file under the root directory of your project.
-
  ### Configure Channel
 
  1. Open your SAP S/4HANA system and navigate to the transaction **/IWXBE/CONFIG**.
@@ -25,7 +13,7 @@ See section [Creating RFC Destination](https://help.sap.com/docs/r/810dfd34f2cc4
 
  ![Configure Channel](./images/EventBased4.png)
 
- 3. In the popup, choose a **channel name**, for example, 'S4EM', provide a description and paste the **Service Key** you have created in the earlier steps using `event-mesh-template.json` file.
+ 3. In the popup, choose a **channel name**, for example, 'S4EM', provide a description and paste the **Service Key** you have created in the earlier steps using `em.json` file.
 
  4. Choose **save configuration**.
 

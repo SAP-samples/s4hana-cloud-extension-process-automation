@@ -7,7 +7,7 @@ This application showcases:
 - Building applications on SAP Business Technology Platform (BTP) using [SAP Cloud Application Programming Model(CAP)](../../discover/discover-cap)
 - Consuming events from SAP S/4HANA on premise using [SAP Event Mesh](../../discover/sap-event-mesh)
 - Consuming REST APIs from SAP S/4HANA on premise using SAP Business Technology Platform Connectivity Service
-- [AP Build Process Automation](../../discover/build-process-automation) (workflow, business events, actions)
+- [SAP Build Process Automation](../../discover/build-process-automation) (workflow, Forms, desicions, actions )
 
 ## Business Scenario
 

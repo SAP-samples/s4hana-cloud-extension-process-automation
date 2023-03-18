@@ -114,7 +114,7 @@ With this step the on-premise setup is finished.
 
     * **Name**:  bupa  --> this destination is later used at the sample application.
     * **Type**:  select HTTP
-    * **URL**:  URL of the virtual host that we have exposed in the Cloud Connector in Section A. =  https://\<virtual host\>:\<virtual port\>, in our case, https://s4h:443/
+    * **URL**:  URL of the virtual host that we have exposed in the Cloud Connector in Section A. =  http://\<virtual host\>:\<virtual port\>/sap/opu/odata/sap/API_BUSINESS_PARTNER, in our case it's, http://s4h:443/sap/opu/odata/sap/API_BUSINESS_PARTNER
 
     * **Proxy Type**: OnPremise
     * **Authentication**: Basic Authentication.

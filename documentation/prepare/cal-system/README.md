@@ -1,7 +1,7 @@
 # Create an SAP S/4HANA Test System Using SAP Cloud Appliance Library
 
 If you don't own an SAP S/4HANA system, you could use the 30-day trial version. As a prerequisite, you need either an Azure, AWS, or Google account. For the operation costs, you are charged by the account provider.
-You can create an instance at [SAP S/4HANA 2021, Fully Activated Appliance](https://cal.sap.com/catalog#/applianceTemplates/a954cc12-da16-4caa-897e-cf84bc74cf15). You have to log on and choose **Create Instance** on the top right.
+You can create an instance at [SAP S/4HANA 2022, Fully Activated Appliance](https://tiint.hana.ondemand.com/console/#/applianceTemplates/f4e6b3ba-ba8f-485f-813f-be27ed5c8311). You have to log on and choose **Create Instance** on the top right.
 
 To run the mission, you need to activate these components:
 * SAP NetWeaver 7.50 SP 16 AS JAVA with Adobe Document Services

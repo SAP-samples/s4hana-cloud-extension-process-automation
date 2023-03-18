@@ -45,17 +45,17 @@ This process will unblock the supplier onboarded in SAP S/4HANA to make payments
 4. Choose **Environment Variables**.
     - In the **Identifier** field, enter **bupa**.
     - In the **Type** dropdown menu, select **Destination**.
-5. Choose **Create**.
+    - Choose **Create**.
 
-   ![spa business create](./images/process_trigger_env.png)
+      ![spa business create](./images/process_trigger_env.png)
 
-6. In the **Process Details** section, choose **Inputs**.
+5. In the **Process Details** section, choose **Inputs**.
 
-7. Choose **Configure**.
+6. Choose **Configure**.
 
    ![spa business create](./images/process_config.png)
    
-8. Choose **Add Input**.
+7. Choose **Add Input**.
     - In the **Name** field, enter **supplier**. The value in the **Identifier** field will be automatically filled in. 
     - In the **Type** dropdown menu, select **String**. 
     - Select the **Required** checkbox.
@@ -64,11 +64,11 @@ This process will unblock the supplier onboarded in SAP S/4HANA to make payments
       | **Name**    |  **Type**    | **Required** |
       | ----------- | ----------- | -----------    |
       | **suppliername**     | **String**  | **Yes** |
-      | **purchaseIsBlock**  | **Boolean** | **Yes** |
-      | **paymentIsBlock**   | **Boolean** | **Yes** |
+      | **purchaseisblock**  | **Boolean** | **Yes** |
+      | **paymentisblock**   | **Boolean** | **Yes** |
       |  **country**         | **String**  | **Yes** |
 
-9. Choose **Apply**.
+8. Choose **Apply**.
 
    ![spa business create](./images/process_config-add.png)
 
@@ -127,11 +127,11 @@ Once the supplier has been verified by the BusinessParnerValidation application,
 
    ![spa business create](./images/process_trigger_create.png)
 
-4. In branch of the **Trigger** module, choose **+**. Then, choose **Decision** > **ApproverRule**.
+4. In branch of the **Trigger** module, choose **+**. Then, choose **Decision** > **Central Block Rule**.
 
    ![spa business create](./images/process_trigger-add-dec.png)
 
-5. In the **ApproverRule** decision, choose **Inputs**. Put the cursor in the **country** field. The **Process Content** section appears. Choose **country** from **Process Start Inputs**. The **country** field is bound in the **country** field of **Input** section.
+5. In the **Central Block Rule** decision, choose **Inputs**. Put the cursor in the **country** field. The **Process Content** section appears. Choose **country** from **Process Inputs**. The **country** field is bound in the **country** field of **Input** section.
 
    ![spa business create](./images/process_trigger-decision-bind.png)
    
@@ -149,7 +149,7 @@ Once the supplier has been verified by the BusinessParnerValidation application,
 
 10. In the **SupplierPaymentApproval** approval, choose **General** tab and Bind the below items.
 
-   - In the **Subject** field, enter **Enable Payment and Purchases to Supplier** and  Drag **suppliername** from **Process Start Inputs**
+   - In the **Subject** field, enter **Enable Payment and Purchases to Supplier** and  Drag **suppliername** from **Process Inputs**
    - In the **Priority** field, choose **Medium**.
    - In the **Users** field, choose **ApproverEmail** from **ApproverRule**.
 
@@ -157,8 +157,8 @@ Once the supplier has been verified by the BusinessParnerValidation application,
    
 11. In the **SupplierPaymentApproval** approval, choose **Input** tab and Bind the below items.
 
-   - In the **Supplier ID** field, choose **supplier** from **Process Start Inputs**.
-   - In the **Supplier Name** field, choose **suppliername** from **Process Start Inputs**.
+   - In the **Supplier ID** field, choose **supplier** from **Process Inputs**.
+   - In the **Supplier Name** field, choose **suppliername** from **Process Inputs**.
 
    ![spa business create](./images/process-approval-input.png)
    
@@ -180,13 +180,21 @@ Once the supplier has been verified by the BusinessParnerValidation application,
 
    ![spa business create](./images/process_action_patch_gen.png)
 
-18. In the **PaymentBlockedForSupplier** field, choose **paymentIsBlock** from **Process Start Inputs**.
+18. Choose **Input**.
 
-19. In the **PurchasingIsBlocked** field, choose **purchaseIsBlock** from **Process Start Inputs**.
+19. In the **PaymentBlockedForSupplier** field, choose **paymentIsBlock** from **Process Inputs**.
 
-20. Choose **Save**.
+20. In the **PurchasingIsBlocked** field, choose **purchaseIsBlock** from **Process Inputs**.
+
+21. In the **Supplier** field, choose **supplier** from **Process Inputs**.
+
+22. Choose **Save**.
 
    ![spa business create](./images/process_action_paym.png)
+
+23. Your final Process look like below.
+
+   ![spa business create](./images/process_paym_final.png)
 
 ## 6. Release the Process
    
@@ -195,6 +203,7 @@ Once the supplier has been verified by the BusinessParnerValidation application,
 2. In the **Version**, choose **Contains only Patches**.
 
 3. Choose **Release**.
+   > Note here that it will only come if the release is already created. For new release, just choose **Release**.
 
    ![spa business create](./images/process_release.png)
 
