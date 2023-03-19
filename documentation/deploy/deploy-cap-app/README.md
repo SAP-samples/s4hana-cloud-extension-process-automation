@@ -1,4 +1,4 @@
-# Develop SAP Cloud Application Programming Model Application
+# Set Up the SAP Cloud Application Programming Model Application
 
 ## Introduction
 
@@ -47,7 +47,7 @@ Now we will setup the SAP Business Application Studio and use it to develop our 
 
     ![Open Workspace](./images/dev-cap-app-7.png)
  
-11.	 Open the project by selecting projects -> cloud-extension-s4hana-business-process and click on *Open*
+11.	 Open the project by selecting projects -> s4hana-cloud-extension-process-automation and click on *Open*
 
 ### Create a Linkage between SAP Cloud Application Programming Model (CAP) Application and SAP Build Process Automation
 
@@ -75,148 +75,95 @@ Now we will setup the SAP Business Application Studio and use it to develop our 
 
 ### Deploy SAP Cloud Application Programming Model (CAP) Application
      
-1. First you need to [login](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/7a37d66c2e7d401db4980db0cd74aa6b.html):
-> You can find the API Endpoint of your Subaccount in the BTP Cockpit-Overview section
+1. you need to login to your Cloud Foundry account from SAP Business Application Studio:
  
-  ``` 
-    cf api <api endpoint>
-    cf login -u <user id> -p <password>
-    cf target -o org -s space
-  ```
-         
+   * Check if you are logged in to your account in SAP BTP from **SAP Business Application Studio**.
+   
+   * You can find the API endpoint of your region by switching into your subaccount in the SAP BTP cockpit that you should have opened in another browser tab and copy the API Endpoint. Write down the **Org Name** into a text editor of your choice which is needed for the next step.  
 
-2. Then you will get the guid of your SAP HANA Cloud. Please note that, in case that you do not have a SAP HANA Cloud in your SAP BTP environment yet, you will have to create one. You can either follow the steps below or follow the more detailed tutorial for creating a SAP HANA Cloud instance [at SAP Help Portal](https://help.sap.com/viewer/db19c7071e5f4101837e23f06e576495/2020_03_QRC/en-US/921f3e46247947779d69b8c85c9b9985.html).
-
- ```
-  cf create-service hana-cloud hana my_hana_db -c '{"data":{"edition":"cloud","memory":30,"systempassword":"<password>"}}'
-  cf service <HANA-cloud> --guid
- ```
- 
-3. In a next step, using the guid of your HANA service, you will create an hana instance
-
-  ```  
-  cf create-service hana hdi-shared BusinessPartnerValidation-db -c '{"database_id" :"<guid of HANA cloud>"}'
-  ``` 
-  
-4. Use "cds build" to build tasks on your project folders to prepare them for deployment.
-
-  ```
-  cds build --production
-  ``` 
-  
-5. Install cf CLI plugin to create services specified from a services manifest.yml file 
-
-  ```	
-  cf install-plugin Create-Service-Push
-  ``` 
-  
-6.  Go to gen/srv
+     ![copy Cloud Data](./images/copyCloudData.png)
     
+   * Choose **Spaces** and write down the space name to a text editor of your choice. 
+
+     ![copy Space Name](./images/copySpaceName.png)
+     
+   * Back in Business Application Studi- to log in to Cloud Foundry, choose **View** > **Find Command**.
     
-7.  Now you will use manifest file to build services in your application. Modify manifest.yml as below:
+   * Search for **CF Login**.
+    
+   * Choose **CF: Login on to Cloud Foundry**.
 
- ```
----
-applications:
-# -----------------------------------------------------------------------------------
-# Backend Service
-# -----------------------------------------------------------------------------------
-- name: BusinessPartnerValidation-srv
-  random-route: true  # for development only
-  path: gen/srv
-  memory: 256M
-  buildpack: nodejs_buildpack
-  services:
-  - BusinessPartnerValidation-db
-  - BusinessPartnerValidation-xsuaa
-  - BusinessPartnerValidation-ems
-  - BusinessPartnerValidation-dest
-  - BusinessPartnerValidation-cs
+     ![Login to CF](./images/loginToCF.png) 
+    
+      * Enter CF API endpoint which you copied or take the default suggested API endpoint.     
+   * Enter your SAP BTP account **Email** and **Password**.
 
-# -----------------------------------------------------------------------------------
-# HANA Database Content Deployer App
-# -----------------------------------------------------------------------------------
-- name: BusinessPartnerValidation-db-deployer
-  path: gen/db
-  no-route: true
-  health-check-type: process
-  memory: 256M
-  instances: 1
-  buildpack: nodejs_buildpack
-  services:
-  - BusinessPartnerValidation-db
+       ![Login to CF](./images/login1.png)
+   
+   * Select your Cloud Foundry **Org** which you have noted down. 
+   * Select the space name which you have noted down. Once you have selected the Org and Space, you would login to Cloud Foundry in SAP Business Application Studio.
+   * Now we have successfully created a workspace and pointed to our desired SAP BTP **Org** and **Space**.
 
-```
+      ![Login to CF](./images/login2.png)
 
-8. Also, modify services-manifest.yml as below:
-
-```
----
-create-services:
-# ------------------------------------------------------------
-  - name:   BusinessPartnerValidation-db
-    broker: hana  # 'hanatrial' on trial landscapes
-    plan: "hdi-shared"
-# ------------------------------------------------------------
-  - name:   BusinessPartnerValidation-xsuaa
-    broker: xsuaa
-    plan: application
-    parameters: "./xs-security.json"
-# ------------------------------------------------------------
-  - name:   BusinessPartnerValidation-ems
-    broker: enterprise-messaging
-    plan: default
-    parameters: "./em.json"
-# ------------------------------------------------------------
-  - name:   BusinessPartnerValidation-dest
-    broker: destination
-    plan: lite
-# ------------------------------------------------------------
-  - name:   BusinessPartnerValidation-cs
-    broker: connectivity
-    plan: lite
-```
-
- 9. Now use the installed plugin to create services
+2. For **SAP BTP Trial only**:
+>  Open the em.json file and replace the content to the following to work with the SAP Event Mesh service (dev plan). Change \<emname\> to a meaningful value, for example, eccevent.
+>
+>   ```json
+>   { "emname": "<emname>",
+>     "options": {
+>       "management": true,
+>       "messagingrest": true,
+>       "messaging": true
+>   }
+> }
+> ```
  
-```
-  cf create-service-push
-```
+> **SAP BTP Trial only:**: Open srv >service.js file and search for messaging.on. Replace the topic name (refappscf/ecc/123/BO/BusinessPartner/Changed) with the customized one.
+> Ex:- \<emname\>/BO/BusinessPartner/Created and \<emname\>/BO/BusinessPartner/Changed
+        
+> **SAP BTP Trial only:** In the mta.yml file, change the service plan name to dev for BusinessPartnerValidation-ems
+>```
+>  - name: BusinessPartnerValidation-ems
+>    parameters:
+>    path: ./em.json 
+>    service: enterprise-messaging
+>    service-plan: default
+> type: org.cloudfoundry.managed-service 
+> ```
 
- 10. Use terminal to create service key
- 
- ```
-  cf create-service-key BusinessPartnerValidation-ems emkey
-```   
-               
-> HINT: there is an additional way of deployment - either execute the steps before or the two below to achieve the same result: Run *mbt build -p=cf* followed by cf *deploy mta_archives/BusinessPartnerValidation_1.0.0.mtar*
+3. Generate the MTAR file. Alternatively, you can also right-click on **mta.yaml** file in the Explorer view and select **Build MTA Project** to build the project.
+    
+    ```bash
+      mbt build -p=cf
+    ```
 
-11. Go back to project directory using command
+4. Deploy the application to your Cloud Foundry space with the MTAR. Alternatively, You can expand the folder **mta\_archives** in Explorer view and right-click on file **BusinessPartnerValidation\_1.0.0.mtar** and choose **Deploy MTA Archive**.
 
-```
-  cd ..
-```
- 
-12.	Run following commands:
+    ```bash
+       cf deploy mta_archives/BusinessPartnerValidation_1.0.0.mtar
+    ```
+    
+5. Generate a service key for configuring event communication between SAP system and SAP Event Mesh.
+   
+    ```bash
+       cf create-service-key BusinessPartnerValidation-ems emkey
+    ```
+    
+6. Check if the deployment finished successfully without giving any errors.
 
-   ```
-    cf p -f gen/db
-    cf p -f gen/srv --random-route
-   ```
- 
-13. The MTA deployment is described in the MTA Deployment Descriptor, a file called mta.yaml. As the first step, you let the CAP server generate an initial mta.yaml file.
+### Test your application
 
-     ```
-     cds add mta
-     ```
-> Hint: This step only needs to be executed in case you have created a new project. As we are using an existing project in this tutorial, you can skip this step as the mta file is already added
-<a name="launchpad"></a>
-	
-	
-### Test Your Application
+1. Go to the terminal and enter *cf apps*.
 
-Deploy the application to the SAP Launchpad Service
-1. Go back to your SAP BTP Account
-2. Go to *Instances and Subscriptions*
-3. Find *Launchpad Service* and click to open the application
-4. In the Website Manager find your created Website and click on tile to open
+ ![Run command](./images/dev-cap-app-18.png)
+
+
+2. Copy the URL of the app BusinessPartnerValidation-srv and open it in a new browser tab.
+
+ ![Open App](./images/dev-cap-app-19.png)
+
+3. You can see that the service is deployed and is running. You cannot test or access the data and you will get authorization error (which is fine).
+
+### Summary
+You have done the configuration for the reference application. You also created the service instances for the required services and deployed the application to your Cloud Foundry space in SAP BTP. In the next steps, you will configure the eventing on the cloud and on-premise and then you are ready to run the application.

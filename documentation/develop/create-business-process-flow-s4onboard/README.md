@@ -50,7 +50,7 @@ This Processes will automate the onboarding of supplier created from supplier re
 
 ## 3. Create Decisions
 
-To configure the approver, you have to create a decision called **ApproverRule** in SAP Build. To do that, follow the steps at
+To configure the approver, you have to create a decision called **Central Block Rule** in SAP Build. To do that, follow the steps at
 [Step-By-Step Guidance to Create Decisions](../create-decisions/README.md).
 
 ## 4. Create Supplier Request Form
@@ -308,8 +308,9 @@ A process condition routes the business process based on certain criteria. These
     ![spa process](./images/spa-process-aaction-lib-supplier-conf-input-bind2.png)
 
 20.  Below is the final layout of editor.
-
     ![spa process](./images/spa-process-final.png)
+
+21. Choose **Save**.
 
 ## 8.Release Business Process
 
