@@ -308,7 +308,6 @@ A process condition routes the business process based on certain criteria. These
     ![spa process](./images/spa-process-aaction-lib-supplier-conf-input-bind2.png)
 
 20.  Below is the final layout of editor.
-
     ![spa process](./images/spa-process-final.png)
 
 21. Choose **Save**.
