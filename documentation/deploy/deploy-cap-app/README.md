@@ -1,4 +1,4 @@
-# Deploy the SAP Cloud Application Programming Model Application
+# Set Up the SAP Cloud Application Programming Model Application
 
 ## Introduction
 
