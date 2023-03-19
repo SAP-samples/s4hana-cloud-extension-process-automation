@@ -148,7 +148,8 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
 17. Select All the fields by clicking on the checkbox of Key column.
 
-18. Uncheck the following fields so that they are added as Input.
+    - Uncheck the following fields so that they are added as Input.
+
         | **Keys selected as Input** | 
         | -------------------------- | 
         | **PurchasingIsBlocked**    |
@@ -157,11 +158,11 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
     ![action create](./images/action-patch-cancel.png)
 
-19. Your final actions **Updates supplier general data** will look like below.
+18. Your final actions **Updates supplier general data** will look like below.
 
     ![action create](./images/action-patch-final.png)
 
-20. Choose **Save**
+19. Choose **Save**
         
 ## 4. Update X-CSRF of Post Actions
 
