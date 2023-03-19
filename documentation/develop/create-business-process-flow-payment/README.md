@@ -74,7 +74,7 @@ This process will unblock the supplier onboarded in SAP S/4HANA to make payments
 
 ## 3. Create Decisions
 
-To configure the approver, you have to create a decision called **ApproverRule** in SAP Build. To do that, follow the steps at
+To configure the approver, you have to create a decision called **Central Block Rule** in SAP Build. To do that, follow the steps at
 [Step-By-Step Guidance to Create Decisions](../create-decisions/README.md).
 
 ## 4. Create Approval
