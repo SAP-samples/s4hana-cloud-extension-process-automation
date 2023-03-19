@@ -71,7 +71,7 @@ The tutorial focus on the following aspects:
     | **Step 1**: [Prerequisites](./documentation/prepare/README.md) | Prepare your systems and accounts. | 
     | **Step 2**: [Setup](./documentation/set-up/README.md) | Configure and Subscribe instances like SAP HANA Cloud, SAP Build Process Automation, setup connectivity between SAP S/4HANA and SAP BTP and so on. | 
     | **Step 3**: [Configure Business Processes](./documentation/develop/README.md)  | Configure Actions, Decisions and Business Processes using SAP Build Process Automation. |
-    | **Step 4**: [Deploy Cloud Application Programming(CAP) and Integrate with Central Fiori Launchpad](./documentation/deploy/README.md)| Develop and Deploy CAP Application and integrate Application with SAP Build Work Zone, Standard Edition |
+    | **Step 4**: [Deploy Cloud Application Programming(CAP) and Integrate with SAP Build Work Zone](./documentation/deploy/README.md)| Develop and Deploy CAP Application and integrate Application with SAP Build Work Zone, Standard Edition |
     | **Step 6**: [Configure Event-Based Communication between SAP S/4HANA and SAP Event Mesh](./documentation/deploy/configure-channel/README.md) | Configure outbound messaging in SAP S/4HANA and add bindings. |
     | **Step 7**: [Run the Example Scenario](./documentation/deploy/run-e2e/README.md) | Run End to End scenario |
 
