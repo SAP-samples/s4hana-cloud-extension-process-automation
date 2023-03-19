@@ -149,9 +149,8 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 17. Select All the fields by clicking on the checkbox of Key column.
 
 18. Uncheck the following fields so that they are added as Input.
-
         | **Keys selected as Input** | 
-        | ----------- | 
+        | -------------------------- | 
         | **PurchasingIsBlocked**    |
         | **PaymentIsBlockedForSupplier** |
         
