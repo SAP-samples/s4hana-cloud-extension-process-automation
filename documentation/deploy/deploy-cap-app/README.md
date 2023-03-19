@@ -164,3 +164,6 @@ Now we will setup the SAP Business Application Studio and use it to develop our 
  ![Open App](./images/dev-cap-app-19.png)
 
 3. You can see that the service is deployed and is running. You cannot test or access the data and you will get authorization error (which is fine).
+
+### Summary
+You have done the configuration for the reference application. You also created the service instances for the required services and deployed the application to your Cloud Foundry space in SAP BTP. In the next steps, you will configure the eventing on the cloud and on-premise and then you are ready to run the application.
