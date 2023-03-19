@@ -1,4 +1,4 @@
-# Develop SAP Cloud Application Programming Model Application
+# Develop and Deploy SAP Cloud Application Programming Model Application
 
 ## Introduction
 
