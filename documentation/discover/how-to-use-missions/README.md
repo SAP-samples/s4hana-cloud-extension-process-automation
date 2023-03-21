@@ -9,13 +9,3 @@ Every mission contains a project board that allows you to:
 2. View fully customizable tasks that are listed as cards and categorized into phases (columns).
     1. We realize that each of your mission can be unique, this board supports that.
     2. Collaborate with your coaches.
-
-*(Remove this part if you don't want to offer coaching)*
-
-Once you learn who your coaches are, you can contact them by adding a comment in the task by tagging them **@<coach_name>** and they will receive a direct message and should respond to you within a short period of time (depending on their working time zone).
-
-1. Align your mission with the experts.
-    1. Both you and your coaches will keep track of the progress by completing each task.
-    2. When working on one task, choose **Pin (the current) Card**.
-    3. Once a task is completed, choose **Mark Card as Completed**.
-2. Keep mission assets all in one place.
