@@ -190,13 +190,20 @@ You will now release the action project to create version(s) and then publish a 
 
 ## 6. Publish action project 
 
-Once the action project is released, you can the publish any release version of the action by clicking **Publish to Library** from top-right corner.
+Once the action project is released, you can the publish any release version of the action by choosing **Publish to Library** .
 
-1. Choose **Publish to Library**.
+1. Open SAP Build and choose **Lobby**. Then, choose your actions **businesspartner**.
 
-2. Choose **Publish**.
+2. Choose three dots.
+
+3. Choose **Publish to Library**
 
 ![action create](./images/actions_publish.png)
+
+4. Choose **Publish**.
+
+![action create](./images/actions_publish_final.png)
+
 
 ## 7. Test Actions Project with Destination in SAP BTP
 
