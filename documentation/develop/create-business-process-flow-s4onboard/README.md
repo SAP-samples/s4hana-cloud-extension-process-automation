@@ -76,17 +76,17 @@ This request form will serve as a trigger form to enter all relevant details of 
 
     | **Form Fields** |  **Field Settings with Label**    | 
     | ----------- | ----------- | 
-    | **Headline 1(H1)**     | **/Request Form for Supplier Validation**  | 
+    | Headline 1(H1)     | Request Form for Supplier Validation  | 
 
 6. Now, add **Inputs** Fields, enter the labels and select the **Required** checkbox.
 
      **Form Fields** |  **Field Settings with Label**    | 
     | ----------- | ----------- | 
-    | **Text**     | **Supplier Name**  | 
-    | **Text**     | **Street**  | 
-    | **Text**     | **City**  | 
-    | **Text**     | **Postal Code**  | 
-    | **Dropdown**     | **Country**  | 
+    | Text     | Supplier Name  | 
+    | Text     | Street  | 
+    | Text     | City  | 
+    | Text     | Postal Code  | 
+    | Dropdown | Country | 
 
     ![spa business create](./images/spa-supp-req-form-supplier.png)
 
@@ -124,7 +124,7 @@ The supplier approval form will be used to get faster and easier approvals from 
 
     | **Form Fields** |  **Field Settings with Label**    | 
     | ----------- | ----------- | 
-    | **Paragraph**  | **Post acceptance, new supplier will be created in SAP S/4HANA System and Verification process will be triggered**  | 
+    | Paragraph  | Post acceptance, new supplier will be created in SAP S/4HANA System and Verification process will be triggered  | 
 
     ![spa create](./images/spa-suplier-approval-para.png)
 
@@ -153,22 +153,22 @@ After the user approves or rejects the request, the next step is to create notif
 
     | **Form Fields** |  **Field Settings with Label**    | 
     | ----------- | ----------- | 
-    | **Headline 1(H1)**  | **Your SAP S/4HANA has recorded new supplier with below details**  | 
+    | Headline 1(H1)  | Your SAP S/4HANA has recorded new supplier with below details  | 
 
 6. Now, add **Inputs** Fields, enter the labels and select the **Read Only** checkbox.
 
      **Form Fields** |  **Field Settings with Label**    | 
     | ----------- | ----------- | 
-    | **Text**     | **Supplier**  | 
-    | **Text**     | **Supplier Name**  | 
-    | **Text**     | **Street**  | 
-    | **Text**     | **City**  | 
-    | **Text**     | **Postal Code**  |
-    | **Text**     | **Country**  | 
-    | **Checkbox**     | **Central Block**  | 
-    | **Checkbox**     | **Payment Block**  | 
-    | **Checkbox**     | **Purchase Block**  | 
-    | **Paragraph**     | **Please Click "SUBMIT" for Acknowledgement**  | 
+    | Text     | Supplier  | 
+    | Text     | Supplier Name  | 
+    | Text     | Street  | 
+    | Text     | City  | 
+    | Text     | Postal Code  |
+    | Text     | Country  | 
+    | Checkbox | Central Block  | 
+    | Checkbox | Payment Block  | 
+    | Checkbox | Purchase Block  | 
+    | Paragraph | Please Click "SUBMIT" for Acknowledgement  | 
 
     ![spa confirm](./images/spa-supp-conf-form-final1.png)
 
@@ -285,6 +285,7 @@ A process condition routes the business process based on certain criteria. These
         - enter **New Supplier**
         - Choose **BusinessPartner** from actions **create a new business partner record**
         - **added in S/4HANA**
+        > Please type the above text in the processes as copy-paste might throw error.
     - In the **Priority** field, choose **Medium**.
     - In the **Users** field, choose **ApproverEmail** from **Central Block Rule**.
 
@@ -293,6 +294,7 @@ A process condition routes the business process based on certain criteria. These
 19. In the form **Supplier Cofirmation** module ,choose **Inputs** and bind the below items.
 
     - In the **Central Block** field, choose **BusinessPartnerIsBlocked** of actions **create a new business partner record**.
+      > just to note that in updated api specification BusinessPartnerIsBlocked is renamed as **CentralBlock**.
     - In the **City** field, choose **City** from **Supplier Request Form (Trigger)**.
     - In the **Country**, choose **Country** from **Supplier Request Form (Trigger)**.
     - In the **Payment Block**, choose **BusinessPartnerIsBlocked** of actions **create a new business partner record**.

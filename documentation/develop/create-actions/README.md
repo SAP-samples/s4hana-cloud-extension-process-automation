@@ -57,8 +57,8 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
     | **Method**    |  **Action**    | **Description** |
     | ----------- | ----------- | -----------    |
-    | **GET**  | **/A_BusinessPartner** | **Retrieves business partner general data** |
-    | **POST**     | **/A_BusinessPartner**  | **Create a new business partner record.** |
+    | GET  | /A_BusinessPartner | Retrieves business partner general data |
+    | POST     | /A_BusinessPartner  | Create a new business partner record |
     
     ![action create](./images/action-post.png)
 
@@ -68,7 +68,7 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
     | **Method**    |  **Action**    | **Description** |
     | ----------- | ----------- | -----------    |
-    | **PATCH**     | **/A_Supplier('{Supplier}')**  | **Updates supplier general data.** |
+    | PATCH     | /A_Supplier('{Supplier}')  | Updates supplier general data. |
 
     ![action create](./images/action-patch.png)
 
@@ -86,11 +86,11 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
         | **Keys selected as Input** | 
         | ----------- | 
-        | **BusinessPartnerCategory** |
-        | **BusinessPartnerIsBlocked** |
-        | **OrganizationBPName1**     | 
-        | **to_BusinessPartnerRole**  | 
-        | **to_BusinessPartnerAddress** |
+        | BusinessPartnerCategory |
+        | BusinessPartnerIsBlocked |
+        | OrganizationBPName1     | 
+        | to_BusinessPartnerRole  | 
+        | to_BusinessPartnerAddress |
 
     - Click cross to delete rest of the unwanted fields.
 
@@ -107,11 +107,11 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
         | **Keys selected as Input** | 
         | ----------- | 
-        | **Country**     | 
-        | **CityName**  | 
-        | **PostalCode** |
-        | **StreetName** |
-        | **Language** |
+        | Country   | 
+        | CityName  | 
+        | PostalCode |
+        | StreetName |
+        | Language |
 
         ![action create](./images/action-bp-address-cancel.png)
         
@@ -122,7 +122,7 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
         | **Keys selected as Input** | 
         | ----------- | 
-        | **BusinessPartnerRole**     | 
+        | BusinessPartnerRole     | 
 
         ![action create](./images/to_role.png)        
 
@@ -152,8 +152,8 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
         | **Keys selected as Input** | 
         | -------------------------- | 
-        | **PurchasingIsBlocked**    |
-        | **PaymentIsBlockedForSupplier** |
+        | PurchasingIsBlocked    |
+        | PaymentIsBlockedForSupplier |
         
 
     ![action create](./images/action-patch-cancel.png)
@@ -168,13 +168,11 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
 1. Choose actions **POST Creates a new business partner record.**.
 
-    - Choose three dots icon and choose **Enable X-CSRF**.
-
-        ![action create](./images/action-enable-xsrf.png)
-
+    - Choose settings icon.
+    - Choose **CSRF**.
+    - In the **Enable CSRF**, choose **YES**.
     - In the **Token Fetch End Point** field, enter **/**
-
-    - Choose **Enable**
+    - Choose **Save**
 
         ![action create](./images/action-enable-csrf-slash.png)
 
@@ -192,13 +190,20 @@ You will now release the action project to create version(s) and then publish a 
 
 ## 6. Publish action project 
 
-Once the action project is released, you can the publish any release version of the action by clicking **Publish to Library** from top-right corner.
+Once the action project is released, you can the publish any release version of the action by choosing **Publish to Library** .
 
-1. Choose **Publish to Library**.
+1. Open SAP Build and choose **Lobby**. Then, choose your actions **businesspartner**.
 
-2. Choose **Publish**.
+2. Choose three dots.
+
+3. Choose **Publish to Library**
 
 ![action create](./images/actions_publish.png)
+
+4. Choose **Publish**.
+
+![action create](./images/actions_publish_final.png)
+
 
 ## 7. Test Actions Project with Destination in SAP BTP
 
