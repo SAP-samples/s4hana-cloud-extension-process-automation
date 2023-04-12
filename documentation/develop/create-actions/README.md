@@ -57,8 +57,8 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
     | **Method**    |  **Action**    | **Description** |
     | ----------- | ----------- | -----------    |
-    | **GET**  | **/A_BusinessPartner** | **Retrieves business partner general data** |
-    | **POST**     | **/A_BusinessPartner**  | **Create a new business partner record.** |
+    | GET  | /A_BusinessPartner | Retrieves business partner general data |
+    | POST     | /A_BusinessPartner  | Create a new business partner record |
     
     ![action create](./images/action-post.png)
 
@@ -68,7 +68,7 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
     | **Method**    |  **Action**    | **Description** |
     | ----------- | ----------- | -----------    |
-    | **PATCH**     | **/A_Supplier('{Supplier}')**  | **Updates supplier general data.** |
+    | PATCH     | /A_Supplier('{Supplier}')  | Updates supplier general data. |
 
     ![action create](./images/action-patch.png)
 
@@ -86,11 +86,11 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
         | **Keys selected as Input** | 
         | ----------- | 
-        | **BusinessPartnerCategory** |
-        | **BusinessPartnerIsBlocked** |
-        | **OrganizationBPName1**     | 
-        | **to_BusinessPartnerRole**  | 
-        | **to_BusinessPartnerAddress** |
+        | BusinessPartnerCategory |
+        | BusinessPartnerIsBlocked |
+        | OrganizationBPName1     | 
+        | to_BusinessPartnerRole  | 
+        | to_BusinessPartnerAddress |
 
     - Click cross to delete rest of the unwanted fields.
 
@@ -107,11 +107,11 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
         | **Keys selected as Input** | 
         | ----------- | 
-        | **Country**     | 
-        | **CityName**  | 
-        | **PostalCode** |
-        | **StreetName** |
-        | **Language** |
+        | Country   | 
+        | CityName  | 
+        | PostalCode |
+        | StreetName |
+        | Language |
 
         ![action create](./images/action-bp-address-cancel.png)
         
@@ -122,7 +122,7 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
         | **Keys selected as Input** | 
         | ----------- | 
-        | **BusinessPartnerRole**     | 
+        | BusinessPartnerRole     | 
 
         ![action create](./images/to_role.png)        
 
@@ -152,8 +152,8 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
         | **Keys selected as Input** | 
         | -------------------------- | 
-        | **PurchasingIsBlocked**    |
-        | **PaymentIsBlockedForSupplier** |
+        | PurchasingIsBlocked    |
+        | PaymentIsBlockedForSupplier |
         
 
     ![action create](./images/action-patch-cancel.png)

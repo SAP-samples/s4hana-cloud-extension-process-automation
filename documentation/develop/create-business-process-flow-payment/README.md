@@ -63,10 +63,10 @@ This process will unblock the supplier onboarded in SAP S/4HANA to make payments
    -  Repeat the previous step to add the following properties:
       | **Name**    |  **Type**    | **Required** |
       | ----------- | ----------- | -----------    |
-      | **suppliername**     | **String**  | **Yes** |
-      | **purchaseisblock**  | **Boolean** | **Yes** |
-      | **paymentisblock**   | **Boolean** | **Yes** |
-      |  **country**         | **String**  | **Yes** |
+      | suppliername     | String  | Yes |
+      | purchaseisblock  | Boolean | Yes |
+      | paymentisblock   | Boolean | Yes |
+      |  country         | String  | Yes |
 
 8. Choose **Apply**.
 
@@ -99,15 +99,15 @@ Once the supplier has been verified by the BusinessParnerValidation application,
 
     | **Form Fields** |  **Field Settings with Label**    | 
     | ----------- | ----------- | 
-    | **Headline 1(H1)**     | ***Enable Payment and Purchases to Supplier**  | 
+    | Headline 1(H1)     | Enable Payment and Purchases to Supplier  | 
 
 5. Now, add **Inputs** Fields, enter the labels and select the **Read Only** checkbox.
 
      **Form Fields** |  **Field Settings with Label**    | 
     | ----------- | ----------- | 
-    | **Text**     | **Supplier ID**  | 
-    | **Text**     | **Supplier Name**  | 
-    | **Paragraph**     | **The Supplier has passed the Background Verification. Please approve that the supplier is now able to do payment and purchases**  | 
+    | Text     | Supplier ID  | 
+    | Text     | Supplier Name  | 
+    | Paragraph     | The Supplier has passed the Background Verification. Please approve that the supplier is now able to do payment and purchases  | 
 
 6. Choose **Save**.
 
