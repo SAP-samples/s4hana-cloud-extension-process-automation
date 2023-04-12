@@ -145,7 +145,7 @@ A decision consists of one or more policies. Each policy consists of a collectio
 
     -  Choose **Save**.
 
-    ![Block create](./images/decision_rules_add_cond.png)
+    ![Block create](./images/decision_rules_cond.png)
 
 
 
