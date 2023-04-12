@@ -285,6 +285,7 @@ A process condition routes the business process based on certain criteria. These
         - enter **New Supplier**
         - Choose **BusinessPartner** from actions **create a new business partner record**
         - **added in S/4HANA**
+        > Please type the above text in the processes as copy-paste might throw error.
     - In the **Priority** field, choose **Medium**.
     - In the **Users** field, choose **ApproverEmail** from **Central Block Rule**.
 
@@ -293,6 +294,7 @@ A process condition routes the business process based on certain criteria. These
 19. In the form **Supplier Cofirmation** module ,choose **Inputs** and bind the below items.
 
     - In the **Central Block** field, choose **BusinessPartnerIsBlocked** of actions **create a new business partner record**.
+      > just to note that in updated api specification BusinessPartnerIsBlocked is renamed as **CentralBlock**.
     - In the **City** field, choose **City** from **Supplier Request Form (Trigger)**.
     - In the **Country**, choose **Country** from **Supplier Request Form (Trigger)**.
     - In the **Payment Block**, choose **BusinessPartnerIsBlocked** of actions **create a new business partner record**.
