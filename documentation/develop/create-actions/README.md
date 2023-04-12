@@ -168,13 +168,11 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
 1. Choose actions **POST Creates a new business partner record.**.
 
-    - Choose three dots icon and choose **Enable X-CSRF**.
-
-        ![action create](./images/action-enable-xsrf.png)
-
+    - Choose settings icon.
+    - Choose **CSRF**.
+    - In the **Enable CSRF**, choose **YES**.
     - In the **Token Fetch End Point** field, enter **/**
-
-    - Choose **Enable**
+    - Choose **Save**
 
         ![action create](./images/action-enable-csrf-slash.png)
 
