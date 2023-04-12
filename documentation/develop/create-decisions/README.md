@@ -139,9 +139,9 @@ A decision consists of one or more policies. Each policy consists of a collectio
 
     - In the **CentralBlock** field, enter **true**.
 
-    - In the **ApproverEmail** field, enter **(Your email ID)**     
+    - In the **ApproverEmail** field, enter **'(Your email ID)'**     
 
-    - In the **SupplierRole** field, enter **FLVN01**.
+    - In the **SupplierRole** field, enter **'FLVN01'**.
 
     -  Choose **Save**.
 
