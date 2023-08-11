@@ -33,7 +33,7 @@ In this section we set up the end-to-end communication between the SAP S/4HANA o
    4. *Subaccount User:* Name of the connection user - for testing you could use your SAP BTP account user, else you first have to create a specific connection user at your SAP BTP account.
    5. *Password:* Password of the connection user
    6. *Description:* Enter a meaningful description.
-   7. *Location ID*: Optional field: If you plan to connect more than one Cloud Connector to a subaccount, then you can mention a Location ID. See [Cloud Connector Configuration Help](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/db9170a7d97610148537d5a84bf79ba2.html#loiodb9170a7d97610148537d5a84bf79ba2__configure_proxy) for more details.
+   7. *Location ID*: If you plan to connect more than one Cloud Connector to a subaccount, then you can mention a Location ID. See [Cloud Connector Configuration Help](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/db9170a7d97610148537d5a84bf79ba2.html#loiodb9170a7d97610148537d5a84bf79ba2__configure_proxy) for more details.
    8. Click on Save
 
    ![Add Subaccount](./images/addSubAccount.png)
@@ -50,7 +50,7 @@ In this section we set up the end-to-end communication between the SAP S/4HANA o
 
     ![add system](./images/add-system1.png)
 
-    2. Select **HTTPS** &rarr; **next**.
+    2. Select **HTTP** &rarr; **next**.
 
     ![add system](./images/add-system2.png)
 

@@ -192,7 +192,7 @@ A process condition routes the business process based on certain criteria. These
 
     ![spa process](./images/spa-process-decision.png)
 
-4. In the **Central Block Rule** decison form, Choose **Inputs** tab and bind the below items.
+4. In the **Central Block Rule** decision form, Choose **Inputs** tab and bind the below items.
 
     - In the **Country** field, choose **Country** from **Supplier Request Form (Trigger)**.
 
@@ -206,7 +206,7 @@ A process condition routes the business process based on certain criteria. These
 
     ![spa process](./images/spa-process-approval-input-end.png)
 
-7. In the **Supplier Approval** approval form, Choose **General** tab tab and bind the below items.
+7. In the **Supplier Approval** approval form, Choose **General** tab and bind the below items.
 
     - In the **Subject** field, enter **Review for Supplier** and choose **Supplier Name** from **Supplier Request Form(Trigger)**.
     - In the **Priority** field, choose **Medium**.
@@ -257,7 +257,7 @@ A process condition routes the business process based on certain criteria. These
 
     ![spa process](./images/spa-process-aaction-lib-bppost-input-role.png)
 
-14. In branch of the action **Create a new business partner record** module, choose **+**. Then, choose **Actions** > **Browse library** > **Update Suplier General Data**.
+14. In branch of the action **Create a new business partner record** module, choose **+**. Then, choose **Actions** > **Browse library** > **Update Supplier General Data**.
 
     ![spa process](./images/spa-process-action-lib-supplier-patch.png)
  
@@ -266,20 +266,20 @@ A process condition routes the business process based on certain criteria. These
 
     ![spa process](./images/spa-process-action-lib-supplier-general.png)
 
-16. In the action **Update Suplier General Data**, choose **Input**.
+16. In the action **Update Supplier General Data**, choose **Input**.
     - In the **Supplier** field, choose **BusinessPartner** of actions **create a new business partner record**.
-    - In the **PaymentBlockedForSupplier**, choose **BusinessPartnerIsBlocked** of actions **create a new business partner record**.
-    - In the **PurchasingIsBlocked**, choose **BusinessPartnerIsBlocked** of actions **create a new business partner record**.
+    - In the **PaymentBlockedForSupplier**, choose **BusinessPartnerIsBlocked** from **Central Block Rule**
+    - In the **PurchasingIsBlocked**, choose **BusinessPartnerIsBlocked** from **Central Block Rule**
 
     > In updated api spec, updated name of PaymentBlockedForSupplier is **Payment block**, PurchasingIsBlocked is **Purch. Block** and BusinessPartnerIsBlocked is **Central Block**
 
     ![spa process](./images/spa-process-action-lib-supplier-input.png)
 
-17. In the action **Update Suplier General Data** module, choose **+** sign > **Forms** > **Supplier Cofirmation**.
+17. In the action **Update Supplier General Data** module, choose **+** sign > **Forms** > **Supplier Confirmation**.
 
     ![spa process](./images/spa-process-action-lib-supplier-conf.png)
 
-18. In the form **Supplier Cofirmation** module ,choose **General** and bind the below items.
+18. In the form **Supplier Confirmation** module ,choose **General** and bind the below items.
 
     - In the **Subject** box:
         - enter **New Supplier**
@@ -291,7 +291,7 @@ A process condition routes the business process based on certain criteria. These
 
     ![spa process](./images/spa-process-aaction-lib-supplier-conf-input.png)
 
-19. In the form **Supplier Cofirmation** module ,choose **Inputs** and bind the below items.
+19. In the form **Supplier Confirmation** module ,choose **Inputs** and bind the below items.
 
     - In the **Central Block** field, choose **BusinessPartnerIsBlocked** of actions **create a new business partner record**.
       > just to note that in updated api specification BusinessPartnerIsBlocked is renamed as **CentralBlock**.
@@ -320,11 +320,17 @@ To run the process you have to first release and then deploy the business proces
 
 1. Choose **Release**.
 
-2.  In the **Release Project** dialog box, do the following:
-    - In the **Version**, choose **Contains only patches**.
-    - Choose **Release**.
+   - For new release, choose **Release** leaving the **Version Number** unchanged.
 
-        ![spa process](./images/spa-release.png)
+   ![spa new release](./images/spa-new-release.png)
+
+   - For releasing it from second time and so on.., do the following:
+
+     1. In the **Version**, choose **Contains only Patches**.
+
+     2. Choose **Release**.
+   
+   ![spa business create](./images/spa-release-patches.png)
 
 ## 9. Deploy Business Process
 

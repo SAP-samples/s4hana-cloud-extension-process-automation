@@ -99,15 +99,16 @@ You've now assigned this user to the role collection. The user has all of the au
     4. In the **Type** field, choose**HTTP**.
     5. Enter **Description**.
     6. In the **Proxy Type**, choose choose **Internet**
-    7. In the **URL** field, enter **<endpoints.api>** which you got from service key .
+    7. In the **URL** field, enter **<endpoints.api>** as a URL which you got from Service key **spa-service-key**, refer to the previous step for the Service key Information.
     8. In the **Authentication**, choose **OAuth2ClientCredentials**.
-    9. In the **Client ID** field, enter **uaa.clientid** which you got from service key.
+    9. In the **Client ID** field, enter **uaa.clientid** which you got from service key, refer to the previous step for the Service key Information.
     10. In the **Client Secret**, enter **uaa.clientsecret** which you got from service key.
-    11. In the **Token Service URL** field, enter **<endpoints.url which you got from service key>/oauth/token**.
+    11. In the **Token Service URL** field, enter **<endpoints.url>** as a URL which you got from service key **/oauth/token**, refer to the previous step for the Service key Information.
+    12. Choose **Save**.
 
     ![lunchpad1](./images/spa-dest.png)
 
-    12. Choose **Check Connection**
+    13. Choose **Check Connection**
 
     ![lunchpad1](./images/spa-conn.png)
 
