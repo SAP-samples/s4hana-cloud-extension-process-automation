@@ -34,7 +34,7 @@ The application requires the following [Entitlements and Quotas](https://help.sa
 | Cloud Foundry Runtime             | MEMORY     |          2          |
 | Event Mesh                        | default    |          1          |
 | Destination Service               | lite       |          1          |
-| Connectivity Service              | proxy      |          1          |
+| Connectivity Service              | lite       |          1          |
 | SAP Build Work Zone, standard edition | standard (Application) |  Subscription |
 | SAP Build Process Automation      | standard   |          1          |
 | SAP Build Process Automation      | standard (Application) |  Subscription |

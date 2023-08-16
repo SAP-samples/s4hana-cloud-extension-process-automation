@@ -33,19 +33,48 @@ To deploy the mock server application it's necessary to have a Cloud Foundry run
 
 ## Quick deploy in Cloud Foundry Environment
 
-1. Clone this repository to your SAP Business Application Studio workspace
-2. Open cloned project folder
-3. Right click on *mta.yaml* file and select **Build MTA Project**. The will generate an .MTAR file in mta_archives folder.
-4. After build is done right click on mta_archives/Mockserver_1.0.0.mtar and select **Deploy MTA Archive**
+1. Open the SAP Business Application Studio and create a new **Dev Space** using the **Full Stack Cloud Application** type
+
+    ![mock server setup](./images/mock_server_1.png)
+
+2. In the menu select Terminal  &rarr;  New Terminal. In the terminal go to the projects folder
+
+   ```bash
+      cd projects
+   ```
+
+3. Clone the mock server GitHub repository:
+
+   ```bash
+      git clone -b mock https://github.com/SAP-samples/cloud-extension-ecc-business-process.git
+   ``` 
+4. Choose File in the menu on the top and then select Open Workspace from the dropdown menu.
+
+4. Open the project by choosing projects > cloud-extension-ecc-business-process and choose Open.
+
+6. In the project folder right-click on the `mta.yaml` file and select **Build MTA Project**.
+
+   ![mock server setup](./images/mock_server_2.png)
+
+7. When the build was successful, you will see a new folder **mta_archives** in your project with the **Mockserver_1.0.0.mtar** file. Right-click on that file and select **Deploy MTA Archive**.
+
+   ![mock server setup](./images/mock_server_3.png)
+
     - You probably will be asked about Cloud Foundry login. Follow the instructions on the screen to enter you CF Endpoint and credentials. On the latest step you will choose your target CF Organization and CF Space.
-5. \[OPTIONAL\] If you already have some Event Mesh instance you can bind it from terminal after the deployment is successfully done:
+8. \[OPTIONAL\] If you already have some Event Mesh instance you can bind it from terminal after the deployment is successfully done:
+
     - Open new terminal window with Ctrl+`
+    
     - Enter the following command:
     <code>cf bs mock-srv BusinessPartnerValidation-ems && cf restart mock-srv</code>
     - NOTE: in the example above the name of Event Mesh service instance is BusinessPartnerValidation-ems. It can be different in your case!
-6. \[OPTIONAL\] You can also create a destination to the newly deployed Mock Server Application. It's only relevant if you have a destination service instance created in your CF space.  Go to terminal and start the following command:
-    <code>bash create-destination.sh bupa BusinessPartnerValidation-dest</code>
+9. \[OPTIONAL\] You can also create a destination to the newly deployed Mock Server Application. It's only relevant if you have a destination service instance created in your CF space. 
+    - Go to terminal and start the following command:
+        ```
+        bash create-destination.sh bupa BusinessPartnerValidation-dest</code>
+        ```
     - NOTE: in the command above the destination name is "bupa". You can change it as you need.
+    
     - NOTE: in the command above the destination service instance is "BusinessPartnerValidation-dest". You can change it as you need.
 
 ## How to use

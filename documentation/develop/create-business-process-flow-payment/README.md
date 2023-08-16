@@ -149,9 +149,9 @@ Once the supplier has been verified by the BusinessParnerValidation application,
 
 10. In the **SupplierPaymentApproval** approval, choose **General** tab and Bind the below items.
 
-   - In the **Subject** field, enter **Enable Payment and Purchases to Supplier** and  Drag **suppliername** from **Process Inputs**
+   - In the **Subject** field, enter **Enable Payment and Purchase to Supplier** and  Drag **suppliername** from **Process Inputs**
    - In the **Priority** field, choose **Medium**.
-   - In the **Users** field, choose **ApproverEmail** from **ApproverRule**.
+   - In the **Users** field, choose **ApproverEmail** from **Central Block Rule**.
 
    ![spa business create](./images/process-approval-general.png)
    
@@ -200,11 +200,16 @@ Once the supplier has been verified by the BusinessParnerValidation application,
    
 1. Choose **Release**
 
-2. In the **Version**, choose **Contains only Patches**.
+   - For new release, choose **Release** leaving the **Version Number** unchanged.
 
-3. Choose **Release**.
-   > Note here that it will only come if the release is already created. For new release, just choose **Release**.
+   ![spa new release](./images/spa-new-release.png)
 
+   - For releasing it from second time and so on.., do the following:
+
+     1. In the **Version**, choose **Contains only Patches**.
+
+     2. Choose **Release**.
+   
    ![spa business create](./images/process_release.png)
 
 ## 7. Deploy the Process   
