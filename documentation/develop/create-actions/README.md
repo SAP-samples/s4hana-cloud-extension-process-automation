@@ -38,22 +38,33 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
     ![action create](./images/action_create_action.png)
 
-4. In the popup, do the following:
+4. Choose **Upload API Specification** tile under **API Specification**.
+
+    ![action create](./images/action_upload_api_source.png)
+
+5. Choose **Browse Files** and browse for the json file you downloaded from SAP API Business Hub.
+
+    ![action create](./images/action_browse_file.png)
+
+6. After uploading json file, Choose **Next**
+
+    ![action create](./images/action_after_api_upload.png)
+
+7. In the Final Step, do the following:
 
     - In the **Project Name** field, enter **businesspartner**.
     - In the **Short Decription** field, enter **API to create supplier in S/4HANA system**.
-    - In the **Upload API Specification** field, browse for the json file you downloaded from SAP API Business Hub.
     - Choose **Create**
 
-    ![action create](./images/action_businesspartner.png)
+    ![action create](./images/action_business_partner.png)
 
     Once the action project is created, the action editor will automatically open. 
 
-5. In the **Actions Type** dropdown, choose **GET**, **POST** and **PATCH**.
+8. In the **Actions Type** dropdown, choose **GET**, **POST** and **PATCH**.
 
     ![action create](./images/action_create_action-filter.png)
 
-6. In the Action **Business Partner**, choose below actions.
+9. In the Action **Business Partner**, choose below actions.
 
     | **Method**    |  **Action**    | **Description** |
     | ----------- | ----------- | -----------    |
@@ -64,7 +75,7 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
     ![action create](./images/action-get.png)
 
-7. In the Action **Supplier**, choose below actions.
+10. In the Action **Supplier**, choose below actions.
 
     | **Method**    |  **Action**    | **Description** |
     | ----------- | ----------- | -----------    |
@@ -72,9 +83,9 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
     ![action create](./images/action-patch.png)
 
-8. Choose **Add**
+11. Choose **Add**
 
-9. Now, you will update the input/output fields of the action project **Creates a new business partner record** to keep only the mandatory fields that are needed to **create** the supplier. To select the Input fields, do the following:
+12. Now, you will update the input/output fields of the action project **Creates a new business partner record** to keep only the mandatory fields that are needed to **create** the supplier. To select the Input fields, do the following:
 
     - Sort Key in ascending order by clicking on the key column and select the Sort Ascending option.
 
@@ -100,7 +111,7 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
     
       ![action create](./images/action-remove.png)
 
-10. Repeat the previous steps to remove the unwanted field in **to_BusinessPartnerAddress**
+13. Repeat the previous steps to remove the unwanted field in **to_BusinessPartnerAddress**
 
     - Select All the fields **to_BusinessPartnerAddress** by clicking on the checkbox of Key column.
     - Uncheck the following fields so that they are added as Input.
@@ -115,7 +126,7 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
         ![action create](./images/action-bp-address-cancel.png)
         
-11. Repeat the previous steps to remove the unwanted field in **to_BusinessPartnerRole**
+14. Repeat the previous steps to remove the unwanted field in **to_BusinessPartnerRole**
 
     - Select All the fields **to_BusinessPartnerRole** by clicking on the checkbox of Key column.
     - Uncheck the following fields so that they are added as Input.
@@ -126,27 +137,27 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
         ![action create](./images/to_role.png)        
 
-12. Choose **BusinessPartnerCategory**.
+15. Choose **BusinessPartnerCategory**.
     - In the **Static** field, choose **YES**.
     - In the **Value** field, enter **2**.
 
     ![action create](./images/action_create_post_newbp_category_static.png)
 
-13. Choose **Language**.
+16. Choose **Language**.
     - In the **Static** field, choose **YES**.
     - In the **Value** field, enter **en**.
 
     ![action create](./images/action_create_post_newbp_lang_static.png)
     
-14. Choose **Save**.
+17. Choose **Save**.
 
-15. Your final actions **Creates a new business partner record** will look like below.
+18. Your final actions **Creates a new business partner record** will look like below.
 
     ![action create](./images/action-post-final.png)
 
-16.  Now, you will update the input/output fields of the  to keep only the mandatory fields that are needed to **update** the supplier. To select the Input fields, do the following:
+19.  Now, you will update the input/output fields of the  to keep only the mandatory fields that are needed to **update** the supplier. To select the Input fields, do the following:
 
-17. Select All the fields by clicking on the checkbox of Key column.
+20. Select All the fields by clicking on the checkbox of Key column.
 
     - Uncheck the following fields so that they are added as Input.
 
@@ -158,11 +169,11 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
     ![action create](./images/action-patch-cancel.png)
 
-18. Your final actions **Updates supplier general data** will look like below.
+21. Your final actions **Updates supplier general data** will look like below.
 
     ![action create](./images/action-patch-final.png)
 
-19. Choose **Save**
+22. Choose **Save**
         
 ## 4. Update X-CSRF of Post Actions
 
