@@ -66,7 +66,7 @@ A decision consists of one or more policies. Each policy consists of a collectio
 
 1. Choose **Create** > **Decision**.
 
-![Block create](./images/decision_lobby_1.png)
+    ![Block create](./images/decision_lobby_1.png)
 
 2. In the **Create Decision** window, do the following:
     - In the **Name** field, enter **Central Block Rule**.
@@ -84,7 +84,7 @@ A decision consists of one or more policies. Each policy consists of a collectio
     - In the **Description** field, enter **input**
     - In the **Type** field, choose **CentralBlockInput**
 
-    ![Block create](./images/decision_input_param.png)
+    ![Block create](./images/Block_rule_input.png)
 
 6. Choose **Add Output Parameter** to configure the output.
 
@@ -93,7 +93,7 @@ A decision consists of one or more policies. Each policy consists of a collectio
     - In the **Description** field, enter **output**
     - In the **Type** field, **CentralBlockOutput**
 
-    ![Block create](./images/decision_output_param.png)
+    ![Block create](./images/Block_rule_output.png)
 
 8. Choose **Save**.
 
@@ -101,7 +101,7 @@ A decision consists of one or more policies. Each policy consists of a collectio
 
 10. Choose **Add Rule**.
 
-    ![Block create](./images/decision_rules_add.png)
+    ![Block create](./images/Add_rule.png)
 
 11. In the **Create Rule** window:
     - In the **Rule Type** field, select **Decision Table**
@@ -109,15 +109,15 @@ A decision consists of one or more policies. Each policy consists of a collectio
     - In the **Rule Description** field, enter **BlockRule**
     - Choose **Next Step**. You will be navigated to the **Configure Condition**.
 
-    ![Block create](./images/decision_table_input.png)
+    ![Block create](./images/Add_rule_step1.png)
 
 12. You will now configure the conditions. Under **Vocabulary**:
-    - Select **country** data type.
+    - Select **Input** data type.
     - From the dropdown, choose the input **Country**.
     - In the **Operator (Optional)** dropdown, choose **EXISTIN**.
     - Choose **Next Step**. You will be navigated to the **Configure Results**.
 
-    ![Block create](./images/decision_rules_input_cond.png)
+    ![Block create](./images/rule_input_add.png)
 
 13. Configure the output or result of the decision table. Under Result **Vocabulary**:
     - Choose **Output** data type
@@ -127,9 +127,8 @@ A decision consists of one or more policies. Each policy consists of a collectio
     ![Block create](./images/decision_rules_output_cond.png)
 
 14. Review and choose **Finish** button to create the rule. 
-    > In latest release, Finish bitton is renamed as **Create**
 
-    ![Block create](./images/decision_rules_add_cond_save.png)
+    ![Block create](./images/Add_rule_review_step.png)
 
 15. In the newly created **Decision Table**, add values to condition and result columns.
 
@@ -145,7 +144,7 @@ A decision consists of one or more policies. Each policy consists of a collectio
 
     -  Choose **Save**.
 
-    ![Block create](./images/decision_rules_cond.png)
+    ![Block create](./images/Decision_table.png)
 
 
 
