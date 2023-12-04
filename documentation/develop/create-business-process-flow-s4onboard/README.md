@@ -42,6 +42,8 @@ This Processes will automate the onboarding of supplier created from supplier re
 
 4. Choose **Environment Variables**.
 
+    - Choose **+ Create**
+      ![spa business create](./images/process_trigger_env_create.png)
     - In the **Identifier** field, enter **bupa**.
     - In the **Type** dropdown menu, choose **Destination**.
     - Choose **Create**.
