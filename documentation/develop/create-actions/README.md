@@ -4,7 +4,7 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
 ## 1. Download API Specification for API_BUSINESS_PARTNER.
 
-1. Login to [SAP API Business Hub](https://api.sap.com). Find the [Business Partner (A2X)](https://api.sap.com/api/API_BUSINESS_PARTNER/overview) API for SAP S/4HANA.
+1. Login to [SAP API Business Hub](https://api.sap.com). Find the [Business Partner (A2X)](https://api.sap.com/api/OP_API_BUSINESS_PARTNER_SRV/overview) API for SAP S/4HANA.
 
 2. Choose **API Specification** and download the JSON file.
 
