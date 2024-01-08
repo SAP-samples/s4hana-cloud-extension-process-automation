@@ -93,7 +93,7 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
     - Choose **Remove**.
 
-      ![action create](./images/remove.png)
+      ![action create](./images/Remove.png)
 
     - In the confirmation popup, click Remove.
     
