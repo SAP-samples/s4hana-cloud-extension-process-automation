@@ -93,7 +93,7 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
     - Choose **Remove**.
 
-      ![action create](./images/remove.png)
+      ![action create](./images/Remove.png)
 
     - In the confirmation popup, click Remove.
     
@@ -173,7 +173,7 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
     - In the **Token Fetch End Point** field, enter **/**
     - Choose **Save**
 
-        ![action create](./images/action-enable-csrf-slash.png)
+        ![action create](./images/csrf.png)
 
 2. Repeat the same steps for actions **PATCH Updates supplier general data**.
 
@@ -191,17 +191,17 @@ You will now release the action project to create version(s) and then publish a 
 
 Once the action project is released, you can the publish any release version of the action by choosing **Publish to Library** .
 
-1. Open SAP Build and choose **Lobby**. Then, choose your actions **businesspartner**.
+1. Open SAP Build and choose **Actions** under **Connectors** on the left panel. Then, choose your actions **businesspartner**.
 
 2. Choose three dots.
 
 3. Choose **Publish to Library**
 
-![action create](./images/actions_publish.png)
+    ![action create](./images/publish.png)
 
 4. Choose **Publish**.
 
-![action create](./images/actions_publish_final.png)
+    ![action create](./images/actions_publish_final.png)
 
 
 ## 6. Test Actions Project with Destination in SAP BTP
