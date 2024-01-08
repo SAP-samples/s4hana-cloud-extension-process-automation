@@ -19,7 +19,7 @@ service SalesService  {
 
   @readonly entity BusinessPartner as projection on BUPA_API.A_BusinessPartner{
      key BusinessPartner as businessPartnerId,
-      BusinessPartnerFullName as businessPartnerName,
+      OrganizationBPName1 as businessPartnerName,
       SearchTerm1 as searchTerm1,
       BusinessPartnerIsBlocked as businessPartnerIsBlocked
   };
