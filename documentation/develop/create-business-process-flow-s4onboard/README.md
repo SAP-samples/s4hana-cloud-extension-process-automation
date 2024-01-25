@@ -253,7 +253,7 @@ A process condition routes the business process based on certain criteria. These
     - In the **BusinessPartnerIsBlocked** field, choose **Central Block** from **Central Block Rule** of **Process Content**.
     - In the **OrganizationBPName1** field, choose **Supplier Name** from **Supplier Request Form (Trigger)** of **Process Content**.
     - Choose **Single Properties** for **to_BusinessPartnerAddress** and select **Single item** under results.
-    - In the **CityName** field, choose **City** from **Supplier Request Form (Trigger)** of **Process Content**.
+    - In the **City** field, choose **City** from **Supplier Request Form (Trigger)** of **Process Content**.
     - In the **Country** field, choose **Country** from **Supplier Request Form (Trigger)** of **Process Content**.
     - In the **PostalCode** field, choose **Postal Code** from **Supplier Request Form (Trigger)** of **Process Content**.
     - In the **Street** field, choose **Street** from **Supplier Request Form (Trigger)** of **Process Content**.
