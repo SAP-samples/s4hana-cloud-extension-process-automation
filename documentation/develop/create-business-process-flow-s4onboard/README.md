@@ -12,7 +12,7 @@ This Processes will automate the onboarding of supplier created from supplier re
 
 3. Choose **Business Process**
 
-   ![spa business create](./images/spa_bus.png)
+   ![spa business create](./images/automation_type.png)
 
 4. In the **Create a Business Process** dialog box, do the following:
 
@@ -32,11 +32,11 @@ This Processes will automate the onboarding of supplier created from supplier re
    - In the **Description** field, enter **Supplier Approval Process**.
    - Choose **Create**.
    
-   ![spa business create](./images/process_create_dialog.png)
+        ![spa business create](./images/process_create_dialog.png)
 
-   You will be navigated to the main screen and you will have one default module called ***TRIGGER***.
+        You will be navigated to the main screen and you will have one default module called ***TRIGGER***.
 
-   ![spa business process main](./images/spa-process-trigger.png)
+        ![spa business process main](./images/trigger_step.png)
    
 3. Choose the Settings icon.
 
@@ -97,7 +97,7 @@ This request form will serve as a trigger form to enter all relevant details of 
     - **DE** 
     - **US**    
 
-    ![spa business create](./images/spa-supp-req-form-country.png)
+    ![spa business create](./images/request_form.png)
 
 8. Choose **Save**.
 
@@ -186,35 +186,41 @@ A process condition routes the business process based on certain criteria. These
 
     ![spa process](./images/spa-process-overview.png)
 
-2. In the **Trigger** module, choose **+**. Then, choose **Forms** > **Supplier Request Form**.
+2. In the **Trigger** module, click on **Add a Trigger**. Then, choose **Submit a Form** and choose **Supplier Request Form**.
 
-    ![spa process](./images/spa-process-request.png)
+    ![spa process](./images/start_a_process.png)
+    ![spa process](./images/select_supplier_request_form.png)
 
-3. In branch of the **Trigger** module, choose **+**. Then, choose **Decision** > **Central Block Rule**.
+3. In branch of the **Trigger** module, choose **+**. Then, choose **Decision** and choose **Central Block Rule**.
 
-    ![spa process](./images/spa-process-decision.png)
+    ![spa process](./images/select_decision.png)
+    ![spa process](./images/select_block_rule.png)
 
 4. In the **Central Block Rule** decision form, Choose **Inputs** tab and bind the below items.
 
+    - Select **Single Properties**.
     - In the **Country** field, choose **Country** from **Supplier Request Form (Trigger)**.
 
-    ![spa process](./images/spa-process-decision-bind.png)
+    ![spa process](./images/select_rule_input.png)
 
-5. In branch of the **Decision** module, choose **+**. Then, choose **Approvals** > **Supplier Approval**.
+5. In branch of the **Decision** module, choose **+**. Then, choose **Approval** > **Supplier Approval**.
 
-    ![spa process](./images/spa-process-approval.png)
+    ![spa process](./images/choose_plus.png)
+    ![spa process](./images/select_approval.png)
+    ![spa process](./images/select_supplier_approval.png)
 
-6. In the **Supplier Approval** approval form, Select Reject and choose **+** icon > **Controls** > **End**.
+6. In the **Supplier Approval** approval form, Under **Reject** side choose **+** icon. And choose **Controls and Events**. Under **Flow logic** choose **End**.
 
-    ![spa process](./images/spa-process-approval-input-end.png)
+    ![spa process](./images/control_end.png)
+    ![spa process](./images/control_end1.png)
 
-7. In the **Supplier Approval** approval form, Choose **General** tab and bind the below items.
+7. In the **Supplier Approval** form, Choose **General** tab and bind the below items.
 
     - In the **Subject** field, enter **Review for Supplier** and choose **Supplier Name** from **Supplier Request Form(Trigger)**.
     - In the **Priority** field, choose **Medium**.
     - In the **Users** field, choose **ApproverEmail** from **Central Block Rule** of **Process Content**.
 
-    ![spa process](./images/spa-process-approval-input.png)
+        ![spa process](./images/supplier_approval_general.png)
 
 8. In the **Supplier Approval** approval form, Choose **Inputs** tab and bind the below items.
 
@@ -224,49 +230,49 @@ A process condition routes the business process based on certain criteria. These
     - In the **Postal Code** field, choose **Postal Code** from **Supplier Request Form (Trigger)**.
     - In the **Street** field, choose **Street** from **Supplier Request Form (Trigger)**.
 
-    ![spa process](./images/spa-process-approval-input-main.png)
+        ![spa process](./images/supplier_input.png)
 
-9. In branch of the **Approve** of **Supplier Approval** module, choose **+**. Then, choose **Actions** > **Browse library**.
+9. In branch of the **Approve** of **Supplier Approval Form** module, choose **+**. Then, choose **Actions** which opens **Browse library**.
 
-    ![spa process](./images/spa-process-aaction-library.png)
+    ![spa process](./images/select_action.png)
 
 10. In the **Projects** field, enter **businesspartner**.
 
 11. Choose actions **Create a new business partner record** and choose **Add**.
 
-    ![spa process](./images/spa-process-aaction-lib-bppost.png)
+    ![spa process](./images/create_new_add.png)
 
 12. In the action **Create a new business partner record** ,choose **General**.
 
     - In the **Destination Variable** field, choose **bupa**.
 
-    ![spa process](./images/spa-process-aaction-lib-bppostgeneral.png)
+      ![spa process](./images/link_bupa.png)
 
 13. In the action **Create a new business partner record** ,choose **Inputs** and bind the below items.
 
     - In the **BusinessPartnerIsBlocked** field, choose **Central Block** from **Central Block Rule** of **Process Content**.
     - In the **OrganizationBPName1** field, choose **Supplier Name** from **Supplier Request Form (Trigger)** of **Process Content**.
-    - choose **to_BusinessPartnerAddress** and select Single item.
-    - In the **CityName** field, choose **City** from **Supplier Request Form (Trigger)** of **Process Content**.
+    - Choose **Single Properties** for **to_BusinessPartnerAddress** and select **Single item** under results.
+    - In the **City** field, choose **City** from **Supplier Request Form (Trigger)** of **Process Content**.
     - In the **Country** field, choose **Country** from **Supplier Request Form (Trigger)** of **Process Content**.
     - In the **PostalCode** field, choose **Postal Code** from **Supplier Request Form (Trigger)** of **Process Content**.
-    - In the **streetname** field, choose **Street** from **Supplier Request Form (Trigger)** of **Process Content**.
+    - In the **Street** field, choose **Street** from **Supplier Request Form (Trigger)** of **Process Content**.
 
-    ![spa process](./images/spa-process-aaction-lib-bppost-input.png)
+        ![spa process](./images/inputs_create_new.png)
 
-    - choose **to_BusinessPartnerRole** and select Single item.
-    - In the **BusinessPartnerRole** field, choose **SupplierRole** from **Central Block Rule** of **Process Content**.
+    - Choose **Single Properties** for **to_BusinessPartnerRole** and select **Single item** under results.
+    - In the **BP Role** field, choose **SupplierRole** from **Central Block Rule** of **Process Content**.
 
-    ![spa process](./images/spa-process-aaction-lib-bppost-input-role.png)
+        ![spa process](./images/inputs_create_new1.png)
 
-14. In branch of the action **Create a new business partner record** module, choose **+**. Then, choose **Actions** > **Browse library** > **Update Supplier General Data**.
+14. In branch of the action **Create a new business partner record** module, choose **+**. Then, choose **Action** which opens **Browse library** and choose **Add** for **Update Supplier General Data** action.
 
     ![spa process](./images/spa-process-action-lib-supplier-patch.png)
  
 15. In the action **Update Supplier General Data**, choose **General**.
     - In the **Destination Variable** field, choose **bupa**.
 
-    ![spa process](./images/spa-process-action-lib-supplier-general.png)
+        ![spa process](./images/link_bupa1.png)
 
 16. In the action **Update Supplier General Data**, choose **Input**.
     - In the **Supplier** field, choose **BusinessPartner** of actions **create a new business partner record**.
@@ -275,23 +281,23 @@ A process condition routes the business process based on certain criteria. These
 
     > In updated api spec, updated name of PaymentBlockedForSupplier is **Payment block**, PurchasingIsBlocked is **Purch. Block** and BusinessPartnerIsBlocked is **Central Block**
 
-    ![spa process](./images/spa-process-action-lib-supplier-input.png)
+    ![spa process](./images/Inputs_update.png)
 
-17. In the action **Update Supplier General Data** module, choose **+** sign > **Forms** > **Supplier Confirmation**.
+17. In the action **Update Supplier General Data** module, choose **+** sign > **Form** > **Supplier Confirmation**.
 
-    ![spa process](./images/spa-process-action-lib-supplier-conf.png)
+    ![spa process](./images/updates_add_form.png)
 
 18. In the form **Supplier Confirmation** module ,choose **General** and bind the below items.
 
     - In the **Subject** box:
         - enter **New Supplier**
         - Choose **BusinessPartner** from actions **create a new business partner record**
-        - **added in S/4HANA**
+        - enter **added in S/4HANA**
         > Please type the above text in the processes as copy-paste might throw error.
     - In the **Priority** field, choose **Medium**.
     - In the **Users** field, choose **ApproverEmail** from **Central Block Rule**.
 
-    ![spa process](./images/spa-process-aaction-lib-supplier-conf-input.png)
+        ![spa process](./images/supplier_confirmation.png)
 
 19. In the form **Supplier Confirmation** module ,choose **Inputs** and bind the below items.
 
@@ -303,16 +309,16 @@ A process condition routes the business process based on certain criteria. These
     - In the **Postal Code** field, choose **Postal Code** from **Supplier Request Form (Trigger)**.
     - In the **Purchase Block** fiels, choose **BusinessPartnerIsBlocked** of actions **create a new business partner record**.
 
-    ![spa process](./images/spa-process-aaction-lib-supplier-conf-input-bind1.png)
+        ![spa process](./images/supplier_inputs.png)
 
     - In the **Street** field, choose **Street** from **Supplier Request Form (Trigger)**.
     - In the **Supplier** field, choose **BusinessPartner** from Actions **create a new business partner record**.
     - In the **Supplier Name** field, choose **Supplier Name** from **Supplier Request Form (Trigger)**.
 
-    ![spa process](./images/spa-process-aaction-lib-supplier-conf-input-bind2.png)
+        ![spa process](./images/supplier_inputs1.png)
 
 20.  Below is the final layout of editor.
-    ![spa process](./images/spa-process-final.png)
+        ![spa process](./images/final_output.png)
 
 21. Choose **Save**.
 
@@ -324,7 +330,7 @@ To run the process you have to first release and then deploy the business proces
 
    - For new release, choose **Release** leaving the **Version Number** unchanged.
 
-   ![spa new release](./images/spa-new-release.png)
+        ![spa new release](./images/spa-new-release.png)
 
    - For releasing it from second time and so on.., do the following:
 
@@ -332,28 +338,23 @@ To run the process you have to first release and then deploy the business proces
 
      2. Choose **Release**.
    
-   ![spa business create](./images/spa-release-patches.png)
+        ![spa business create](./images/spa-release-patches.png)
 
 ## 9. Deploy Business Process
 
 1. Choose **Deploy**.
 
-2. In the **Deploy Supplier Approval for SAP S/4HANA** dialog box, do the following:
+2. Choose **Public** and click on **Deploy**.
 
-    - Choose **Next**
+    ![spa process](./images/choose_environment.png)
 
-        ![spa process](./images/spa-deploy-init.png)
+2. In the **Define Variables** dialog box, do the following:
 
-    - In the **bupa** data type,choose **Set new value**.
-    - In the **Destination** field, choose **bupa**.
-    - Choose **Next**.
+    - Choose **Set new value**
+    - In the **Destination** dropdown, choose **bupa**.
+    - Choose **Deploy**.
 
-        ![spa process](./images/spa-deploy-bupa.png)
-
-    - Choose Deploy
-
-        ![spa process](./images/spa-deploy.png)
-
+        ![spa process](./images/bupa_deploy.png)
 
 
 

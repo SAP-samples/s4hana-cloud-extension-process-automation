@@ -33,7 +33,7 @@ An output data type describes the data structure that can be used as an output p
 
 1. In the **Overview** of **Supplier Approval for SAP S/4HANA** processes, choose **Create** > **Data Type**.
 
-![data type create](./images/data_type_lobby.png)
+    ![data type create](./images/data_type_lobby.png)
 
 2. In the **Create Data Type** window, do the following:
     - In the **Name** field, choose **CentralBlockOutput**.
@@ -46,15 +46,15 @@ An output data type describes the data structure that can be used as an output p
 
 4. In the **Field Details** section on the right, in the **Name** field, enter **CentralBlock** and in the **Type** dropdown, choose **Boolean**.
 
-![data type create](./images/data_type_lobby_input_block.png)
+    ![data type create](./images/data_type_lobby_input_block.png)
 
-5. In the **Field Details** section on the right, in the **Name** field, enter **ApproverEmail** and in the **Type** dropdown, choose **String**.
+5. Choose **New Field**. In the **Field Details** section on the right, in the **Name** field, enter **ApproverEmail** and in the **Type** dropdown, choose **String**.
 
-![data type create](./images/data_type_lobby_input_email.png)
+    ![data type create](./images/data_type_lobby_input_email.png)
 
-6. In the **Field Details** section on the right, in the **Name** field, enter **SupplierRole** and in the **Type** dropdown, choose **String**.
+6. Choose **New Field**. In the **Field Details** section on the right, in the **Name** field, enter **SupplierRole** and in the **Type** dropdown, choose **String**.
 
-![data type create](./images/data_type_lobby_input_role.png)
+    ![data type create](./images/data_type_lobby_input_role.png)
 
 7. Choose **Save**.
 
@@ -126,7 +126,7 @@ A decision consists of one or more policies. Each policy consists of a collectio
 
     ![Block create](./images/decision_rules_output_cond.png)
 
-14. Review and choose **Finish** button to create the rule. 
+14. Review and choose **Create** button to create the rule. 
 
     ![Block create](./images/Add_rule_review_step.png)
 
