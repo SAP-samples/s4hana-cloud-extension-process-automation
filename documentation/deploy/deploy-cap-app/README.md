@@ -28,9 +28,9 @@ Now we will setup the SAP Business Application Studio and use it to develop our 
  
 6.	Your Dev Space is now being created. As soon as the Dev Space is running, you can click on your Dev Spaces name to access
 
-7.	Choose *Terminal -> New Terminal* in the menu on the top of your screen.
+7.	Choose burger menu, click on **Terminal** -> **New Terminal** 
 
-    ![Open Terminal](./images/dev-cap-app-5.png)
+    ![Open Terminal](./images/terminal.png)
  
 8. In the opened terminal go to projects folder with executing
    
@@ -43,31 +43,36 @@ Now we will setup the SAP Business Application Studio and use it to develop our 
    git clone https://github.com/SAP-samples/s4hana-cloud-extension-process-automation.git
    ``` 
  
-10.	Click on *File* in the menu on the top and choose *Open Workspace* in the drop-down.
+10.	Click on *File* from the burger menu on the top and choose *Add Folder to Workspace*.
 
-    ![Open Workspace](./images/dev-cap-app-7.png)
+    ![Open Workspace](./images/open_workspace.png)
  
 11.	 Open the project by selecting projects -> s4hana-cloud-extension-process-automation and click on *Open*
 
 ### Create a Linkage between SAP Cloud Application Programming Model (CAP) Application and SAP Build Process Automation
 
-1. Open SAP Build and choose **Monitor** > **Manage** > **Triggers** > choose **SupplierApi** > choose **Actions** > choose **View**.
-
-   ![Open Workspace](./images/dev-spa-trigger.png)
+1. Open SAP Build and choose **Control Tower**.
+    - Choose **Environments**
+       ![Open Workspace](./images/control_tower_env.png)
+    - Choose **Public**
+    - Choose **Unattended Triggers** tab.
+    - Choose **Supplier API** -> click on **Action** (**...**) -> choose **view**
+      ![Open Workspace](./images/supplier-api.png)
+      ![Open Workspace](./images/api_view.png)
 
 2. In the **View SupplierApi Details** dialog box, copy the **definitionId**.
 
-  ![Open Workspace](./images/dev-spa-trigger-api.png)
+    ![Open Workspace](./images/get_defintion_id.png)
 
 3. Open your CAP application and choose file package.json.
 
 4. Enter the definitionId under cds > requires > workflow > definitionId.
 
-  ![Open Workspace](./images/dev-spa-cap-package.png)
+    ![Open Workspace](./images/dev-spa-cap-package.png)
 
 5. Open file srv > service.js and review the spaPayload structure to make sure there is sync between trigger api json and spaPayload json.
 
-  ![Open Workspace](./images/spa-cap-srv.png)
+    ![Open Workspace](./images/spa-cap-srv.png)
 
 > TROUBLESHOOT: If there is any mismatch between trigger api and CAP spaPayload json, then you have to change it from SAP Build Editor by choosing **Configure**. Once you fix it, then you have to deploy again to reflect the changes in Trigger API.
 

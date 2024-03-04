@@ -30,7 +30,7 @@ The application requires the following [Entitlements and Quotas](https://help.sa
 | Service                           | Plan       | Number of Instances |
 |-----------------------------------|------------|:-------------------:|
 | SAP HANA Schemas & HDI Containers | hdi-shared |          1          |
-| SAP HANA Cloud                    | hana       |          1          |
+| SAP HANA Cloud                    | tools      |          1          |
 | Cloud Foundry Runtime             | MEMORY     |          2          |
 | Event Mesh                        | default    |          1          |
 | Destination Service               | lite       |          1          |

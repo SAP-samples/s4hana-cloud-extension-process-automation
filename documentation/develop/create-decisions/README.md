@@ -8,9 +8,9 @@ Before creating decisions, we would need to define data types. Data types descri
 
 An Input data type describes the data structure that can be used as an input parameter in an automation, a decision or processes. Data types enable you to formalize the data used as input/output parameters for steps, activities, skills processes, scenarios, triggers, or notifiers. Data types facilitate the manipulation and validation of data.
 
-1. In the **Overview** of **Supplier Approval for SAP S/4HANA** processes, choose **Create** > **Data Type**.
+1. In the **Overview** section, choose **Create** > **Data Type**.
 
-    ![data type create](./images/data_type_lobby.png)
+    ![data type create](./images/datatype_add.png)
 
 2. In the **Create Data Type** window, do the following:
     - In the **Name** field, choose **CentralBlockInput**.
@@ -31,9 +31,9 @@ An Input data type describes the data structure that can be used as an input par
 
 An output data type describes the data structure that can be used as an output parameter in an automation, a decision or a process. Data types enable you to formalize the data used as input/output parameters for steps, activities, skills processes, scenarios, triggers, or notifiers. Data types facilitate the manipulation and validation of data.
 
-1. In the **Overview** of **Supplier Approval for SAP S/4HANA** processes, choose **Create** > **Data Type**.
+1. In the **Overview** section, choose **Create** > **Data Type**.
 
-    ![data type create](./images/data_type_lobby.png)
+    ![data type create](./images/datatype_add.png)
 
 2. In the **Create Data Type** window, do the following:
     - In the **Name** field, choose **CentralBlockOutput**.
@@ -64,7 +64,7 @@ A decision consists of one or more policies. Each policy consists of a collectio
 - Decision Table Rule: A decision table is a collection of input and output rule expressions in a tabular representation.
 - Text Rule: A text rule is the collection of rule expressions in a simple if-then format.
 
-1. Choose **Create** > **Decision**.
+1. In the Overview section, Choose **Create** > **Decision**.
 
     ![Block create](./images/decision_lobby_1.png)
 
