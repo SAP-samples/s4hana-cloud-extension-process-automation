@@ -70,9 +70,8 @@ This process will unblock the supplier onboarded in SAP S/4HANA to make payments
       | paymentisblock   | Boolean | Yes |
       |  country         | String  | Yes |
 
-8. Choose **Apply**.
-
-   ![spa business create](./images/configure_inputs.png)
+   - Choose **Apply**.
+      ![spa business create](./images/configure_inputs.png)
 
 ## 3. Create Decisions
 
