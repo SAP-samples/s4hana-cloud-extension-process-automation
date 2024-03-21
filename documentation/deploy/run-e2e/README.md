@@ -1,8 +1,8 @@
 ### Run the Business Process
 
-1. Open the **Supplier Approval for SAP S/4HANA** process builder of the **Deployed** version, and choose **Supplier Request Form** to get the form URL which can be directly opened from the web browser.
+1. Open the **Supplier Approval for SAP S/4HANA** process builder of the **Deployed** version, and choose **Supplier Request Form**, and click on the **copy** icon near Form Link to get the form URL and paste it in the web browser.
 
-    ![App](./images/form_link.png)
+    ![App](./images/form-link.png)
 
 2. When you open the form in the browser, you will have all the input fields as you have defined in the process trigger form. Fill in the form and choose **Submit**.
 
@@ -14,21 +14,20 @@ Monitoring business process is one of the key aspect of the automated processes.
 
 **SAP Build** provides different applications to monitor and manage different process artefacts. These applications are available in the **Monitor** tab.
 
-1. Choose **Home** and then choose **Monitor**.
+1. Choose **Home** and then choose **Monitoring** from the left.
+![App](./images/select-monitoring.png)
 
-    ![App](./images/form-monitor.png)
+2. All deployed processes can be accessed under Processes and Workflows under Monitor. To monitor all the running instances of the process, you have to go to **Process and Workflow Instances**.
 
-2. All deployed processes can be accessed under Processes and Workflows under Manage. To monitor all the running instances of the process, you have to go to **Monitor then Process and Workflow Instances**.
-
-    ![App](./images/monitor-dash.png)
+    ![App](./images/process.png)
 
 3. In there, you will see all the running, erroneous and suspended process instances. Use the filter bar to get a more customized view of the process instances based on different statutes like running, completed, suspended, terminated and so on. Choose your process instance that was just triggered via the start form. As you can see the process is waiting for the task to be completed. 
 
-    ![App](./images/form-task.png)
+    ![App](./images/taskreview.png)
 
 4. As you can see the process is waiting for the task to be completed. These tasks are generated from the forms that are added in the process and can be accessed via the **My Inbox** application.
 
-    ![App](./images/lobby-inbox.png)
+    ![App](./images/inbox.png)
 
 ### Access the Supplier Approval Tasks
 
@@ -88,7 +87,7 @@ Tasks are the request for the users to participate in an approval or review proc
 
 Choose your process instance **Supplier final validation**. The process is waiting for the task **Enable Payment and Purchases to Supplier** to be completed. 
 
-![App](./images/inbox-payment-monitor.png)
+![App](./images/rulecompleted.png)
 
 ### Accessing the Payment and Purchase Enable Tasks
 
