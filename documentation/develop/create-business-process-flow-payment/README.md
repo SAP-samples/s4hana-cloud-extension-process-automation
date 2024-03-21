@@ -6,7 +6,7 @@ This process will unblock the supplier onboarded in SAP S/4HANA to make payments
 
 1. Log in to SAP Build. Choose **Create**.
 
-   ![spa business create](./images/spa_start.png)
+   ![spa business create](./images/create.png)
 
 2. Choose **Build an Automated Process**.
 
