@@ -31,8 +31,6 @@
 2. Review status in detail page as well.
 ![](./images/capdetail.png)
 
-## Next: [Run End to End Scenario](../deploy/README.md)
-
 
 
 

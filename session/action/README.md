@@ -23,4 +23,6 @@
 
 ## You have Successfully integrated the Actions.     
 
+## Next: [Release and Deploy the Project](../deploy/README.md)
+
 

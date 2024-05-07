@@ -17,4 +17,4 @@
 
 ## You have Deployed the Project Successfully. 
 
-## Next: [Release and Deploy the Project](../deploy/README.md)
+## Next: [Run End to End Scenario](../deploy/README.md)
