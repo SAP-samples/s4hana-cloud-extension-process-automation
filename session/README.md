@@ -6,7 +6,7 @@ The goal is to cover all the necessary steps to consume the CAP Service API func
 
 ![](./images/arch.png)
 
-## Section 1 : Build Purchase Order Approval Business Process and Integrate with CAP Application
+## Section 1 : Build Purchase Order Approval Business Process and Integrate with CAP
 
 * Follow the below steps for quick start.
 
