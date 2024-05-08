@@ -50,7 +50,13 @@
 > The customer name in the dropdown are coming from the metadata of SAP S/4HANA api.
 
 9. **Save** the form.
+10. **Release** the project.
+11. **Deploy** the project.
 
+![](../s4hana/images/dest.png)
+
+> [!CAUTION]
+> Please make sure that you have chosen the correct destination for deployment. please see the above screenshot for more clarification.
 
 
 
