@@ -29,7 +29,7 @@ The goal is to cover all the necessary steps to consume the CAP Service API func
     |   | 
     | ----------- |
     | **Step 1**: [Consume SAP S/4HANA Business Partner API to the Drop-Down Fields in the Form.](./s4hana/README.md) |
-    | **Step 2**: [s4hane2e/README.mdm](./s4hane2e/README.md) |
+    | **Step 2**: [Test the Dropdown Filtering in the Form](./s4hane2e/README.md) |
 
 
 ## Sart Discovery Center Mission.

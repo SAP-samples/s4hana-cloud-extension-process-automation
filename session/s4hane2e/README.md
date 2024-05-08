@@ -1,4 +1,4 @@
-#  Test the dropdown filtering in the form
+# Test the Dropdown Filtering in the Form
 
 1. Select the **purchaseform** artifact and copy the deployed form link.
 
