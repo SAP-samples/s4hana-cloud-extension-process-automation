@@ -10,8 +10,6 @@ The goal is to cover all the necessary steps to consume the CAP Service API func
 
 * Follow the below steps for quick start.
 
-    |    | 
-    | ----------- |
     | **Step 1**: [Create Project](./createprocess/README.md) |
     | **Step 2**: [Build a Purchase Order Form](./form/README.md) |
     | **Step 3**: [Build a Purchase Order Approvals](./form/README.md)  |
