@@ -19,6 +19,13 @@ The goal is to cover all the necessary steps to consume the CAP Service API func
     | **Step 5**: [Release and Deploy the Project](./deploy/README.md) |
     | **Step 6**: [Run End to End Scenario](./e2e/README.md) |
 
+## Learn how to integrate SAP S/4HANA inside SAP Build Process Automation.
+
+
+
+
+
+
 ## Sart Discovery Center Mission.
 
 Start the [SAP Discovery Center Mission](https://discovery-center.cloud.sap/missiondetail/4163/4406).
