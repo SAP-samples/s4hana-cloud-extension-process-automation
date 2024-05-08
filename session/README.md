@@ -6,7 +6,7 @@ The goal is to cover all the necessary steps to consume the CAP Service API func
 
 ![](./images/arch.png)
 
-## Where to Start?
+## Section 1 : Build Purchase Order Approval Business Process and Integrate with CAP Application
 
 * Follow the below steps for quick start.
 
@@ -19,11 +19,17 @@ The goal is to cover all the necessary steps to consume the CAP Service API func
     | **Step 5**: [Release and Deploy the Project](./deploy/README.md) |
     | **Step 6**: [Run End to End Scenario](./e2e/README.md) |
 
-## Learn how to integrate SAP S/4HANA inside SAP Build Process Automation.
+##  Section 2: Learn how to integrate SAP S/4HANA inside SAP Build Process Automation.
 
+> [!IMPORTANT]  
+> **Section 1** has to be completed before moving to Section 2.
 
+* Follow the below steps for quick start.
 
-
+    |  **Step**  | 
+    | ----------- |
+    | **Step 1**: [Consume SAP S/4HANA Business Partner API to the Drop-Down Fields in the Form.](./s4hana/README.md) |
+    | **Step 2**: [s4hane2e/README.mdm](./s4hane2e/README.md) |
 
 
 ## Sart Discovery Center Mission.

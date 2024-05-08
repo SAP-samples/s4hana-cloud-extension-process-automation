@@ -56,7 +56,9 @@
 ![](../s4hana/images/dest.png)
 
 > [!CAUTION]
-> Please make sure that you have chosen the correct destination for deployment. please see the above screenshot for more clarification.
+> Please make sure that you have chosen the correct destination for deployment. Please see the above screenshot for more clarification.
+
+## Next : [Test the dropdown filtering in the form](../s4hane2e/README.md)
 
 
 
