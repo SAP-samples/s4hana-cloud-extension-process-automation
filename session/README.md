@@ -6,11 +6,10 @@ The goal is to cover all the necessary steps to consume the CAP Service API func
 
 ![](./images/arch.png)
 
-## Section 1 : Build Purchase Order Approval Business Process and Integrate with CAP
+## Section 1 : Build Purchase Order Approval Business Process and Integrate with CAP.
 
 * Follow the below steps for quick start.
 
-    |  **Step**  | 
     | ----------- |
     | **Step 1**: [Create Project](./createprocess/README.md) |
     | **Step 2**: [Build a Purchase Order Form](./form/README.md) |
@@ -26,7 +25,6 @@ The goal is to cover all the necessary steps to consume the CAP Service API func
 
 * Follow the below steps for quick start.
 
-    |  **Step**  | 
     | ----------- |
     | **Step 1**: [Consume SAP S/4HANA Business Partner API to the Drop-Down Fields in the Form.](./s4hana/README.md) |
     | **Step 2**: [s4hane2e/README.mdm](./s4hane2e/README.md) |
