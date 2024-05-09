@@ -28,7 +28,7 @@
 * PO-004
 * PO-005
 
-7. In the **Configuration**, choose **Required**
+7. In the **Configuration**, choose **Required** and choose **Save**
 
 ![](./images/fillform.png)
 
