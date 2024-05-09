@@ -1,18 +1,18 @@
 # Add Action to Integrate Cloud Application in SAP Build Process Automation.
 
-1. In the Approve section of approval, choose **+**, and then choose **Approval**.
+1. In the Approve section of approval, choose **+**, and then choose **Action**.
 
 ![](./images/add.png)
 
-2. Choose Action **Invokes action updatespo** and thenchoose **Add**.
+2. Choose Action **Invokes action updatespo** and then choose **Add**.
 
 ![](./images/invoke.png)
 
 3. In the action, choose **General**.
-    1. Choose **Destination Variable** and create.
+    1. Choose **+ Create Destination Variable** 
     ![](./images/general.png)
 
-    2. in the identifier, enter **dest**. and then choose **Create**.
+    2. In the create Destination Variable popup, enter **dest** as the identifier and then choose **Create**.
     ![](./images/iden.png)
 
 4. In the action, choose **inputs**.

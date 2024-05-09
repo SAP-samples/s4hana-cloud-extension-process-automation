@@ -9,9 +9,9 @@
 ![](./images/blank.png)
 
 3. In **Create Approval** Popup
-    1. Enter **Name**.
+    1. Enter **Name** as **ApprovePurchase**.
     2. Choose **Based on a form**.
-    3. Choose form name from dropdown
+    3. Choose the created form name from dropdown
 
     ![](./images/enterapproval.png)
 
@@ -27,13 +27,13 @@
 
 
 8. In Approval, choose **General** tab
-    1. In the **Subject**, enter **Approve Purchase Order**. choose the purchase order from purchaseform.
-    2. In the **Recipient**, choose **Process Started By** from Process Metadata
+    1. In the **Subject**, enter **Approve Purchase Order**, choose the purchase order from purchaseform.
+    2. Under the **Recipients** -> **Users**, choose **Process Started By** from Process Metadata.
 
      ![](./images/general.png) 
 
 9. In Approval, choose **Input** tab.
-    1. In **Purchase Order**, choose purchase order from the form .
+    1. In **Purchase Order**, choose **purchase order** from the form .
     2. Choose **Save**
 
     ![](./images/input.png) 
