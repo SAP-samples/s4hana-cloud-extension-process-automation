@@ -5,7 +5,7 @@
 1. From the project, choose **process**.
 ![](./images/process.png)
 
-2. Copu Form link and open in browser.
+2. Copy Form link from right side, and open in browser.
 ![](./images/formlink.png)
 
 3. In the form, Choose **Purchase Order** then choose **Submit**.

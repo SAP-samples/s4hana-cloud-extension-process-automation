@@ -1,6 +1,6 @@
 # Create Project in SAP Build Lobby
 
-1. Open **SAP Build Lobby**.
+1. Open **[SAP Build Lobby](https://hands-on.eu10.build.cloud.sap/lobby)**.
 
 ![](./images/lobby.png)
 
@@ -12,11 +12,11 @@
 
 ![](./images/bp.png)
 
-4. Enter **Project Name** and choose **Create**.
-
+4. Enter Project Name **Purchase Managers** and choose **Create**.
+> Please append a unique random number at the end of Project name to avoid duplication error.
 ![](./images/projectname.png)
 
-5. In the creeate process popup, enter **Name** and then choose **Create**.
+5. In the create process popup, enter **startprocess** in the Name field and choose **Create**.
 
 ![](./images/createprocess.png)
 
