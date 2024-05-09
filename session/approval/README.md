@@ -27,7 +27,7 @@
 
 
 8. In Approval, choose **General** tab
-    1. In the **Subject**, enter **Approve Purchase Order**, choose the purchase order from purchaseform.
+    1. In the **Subject**, enter 'Approve Purchase Order', and choose the purchase order from purchaseform.
     2. Under the **Recipients** -> **Users**, choose **Process Started By** from Process Metadata.
 
      ![](./images/general.png) 
