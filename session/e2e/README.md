@@ -27,7 +27,7 @@
 
 1. Open CAP app and filter with your PO. Click **GO**.
 ![](./images/caplist.png)
-    > [CAP Application link]([https://referenceapps-buil-code-siqi7j0t-dev-customer-srv.cfapps.us10-001.hana.ondemand.com/$fiori-preview/purchaseOrderAppSrv/PurchaseOrders#preview-app&/?sap-iapp-state=TASGG5H9ZAQ9W7IRJJML0FC8JOSQ2N9I2LRF6OUYA](https://referenceapps-buil-code-siqi7j0t-dev-customer-srv.cfapps.us10-001.hana.ondemand.com/$fiori-preview/purchaseOrderAppSrv/PurchaseOrders#preview-app&/?sap-iapp-state=TASNVTQ5GSZP64MFYFGSHYYU6YQCPN43JB0KAS7HI))
+    > [CAP Application link]([https://referenceapps-buil-code-siqi7j0t-dev-customer-srv.cfapps.us10-001.hana.ondemand.com/$fiori-preview/purchaseOrderAppSrv/PurchaseOrders#preview-app&/?sap-iapp-state=TASGG5H9ZAQ9W7IRJJML0FC8JOSQ2N9I2LRF6OUYA](https://referenceapps-buil-code-siqi7j0t-dev-customer-srv.cfapps.us10-001.hana.ondemand.com/$fiori-preview/purchaseOrderAppSrv/PurchaseOrders#preview-app&/?sap-iapp-state=TASNVTQ5GSZP64MFYFGSHYYU6YQCPN43JB0KAS7HI)
 
 2. Review status in detail page as well.
 ![](./images/capdetail.png)
