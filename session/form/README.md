@@ -1,26 +1,30 @@
 # Create Trigger Form for Purchase Order Approval
 
-1. Click on **Add a Trigger** and choose **Submit a Form**.
+1. In the startprocess, click on **Add a Trigger**.
 
-![](./images/chooseform.png)
+    ![](./images/add_a_trigger.png)
 
-2. Choose **Blank Form**
+2. Click on **Submit a Form**.
 
-![](./images/blank%20form.png)
+    ![](./images/submit_a_form.png)
 
-3. Enter **purchaseform** as the Name of the Form and choose **Create**.
+3. Choose **Blank Form**
 
-![](./images/formname.png)
+    ![](./images/blank%20form.png)
 
-4. Choose **Open Editor**
+4. Enter **purchaseform** as the Name of the Form and choose **Create**.
 
-![](./images/formeditor.png)
+    ![](./images/create_form.png)
+
+5. Choose **Open Editor**
+
+    ![](./images/open_editor.png)
 
 #### Now you are inside Form Editor. Lets add the component by drag and drop.
 
-5. Choose header **H1**, and enter **Choose Purchase Order**
+6. Choose header **H1**, and enter **Choose Purchase Order**
 
-6. Choose **Dropdown**, enter name of the dropdown as **Purchase Order**. And in the right side, under **Data to display**, choose **Manual**. Enter below values.
+7. Choose **Dropdown**, enter name of the dropdown as **Purchase Order**. And in the right side, under **Data to display**, choose **Manual**. Enter below values.
 
 * PO-001
 * PO-002
@@ -28,9 +32,9 @@
 * PO-004
 * PO-005
 
-7. In the **Configuration**, choose **Required** and choose **Save**
+8. In the **Configuration**, choose **Required** and choose **Save**
 
-![](./images/fillform.png)
+    ![](./images/fillform.png)
 
 ## You have now completed the Trigger Form.
 
