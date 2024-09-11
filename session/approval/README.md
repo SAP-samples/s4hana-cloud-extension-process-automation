@@ -1,12 +1,13 @@
 # Create Purchase Order Approval Form.
 
-1. Choose **+** after form, and then choose **Approval**.
+1. Choose **+** after the trigger -> purchaseform, and then choose **Approval**.
 
-![](./images/chooseapproval.png)
+![](./images/choose_plus.png)
+![](./images/choose_approval.png)
 
 2. Choose **Blank Approval**.
 
-![](./images/blank.png)
+![](./images/choose_blank_approval.png)
 
 3. In **Create Approval** Popup
     1. Enter **Name** as **ApprovePurchase**.
@@ -17,7 +18,7 @@
 
 4. In **Approval**, choose **Open Editor**.
 
- ![](./images/open.png)
+ ![](./images/open_editor.png)
 
 5. Choose **Text** from the layout. in the text, Enter **Status with Comment**.
 6. In the Configuration, choose **Required**.
@@ -26,13 +27,16 @@
  ![](./images/text.png) 
 
 
-8. In Approval, choose **General** tab
+8. Click on ApproverPurchase, and choose **General** tab
+    
+    ![](./images/approver_purchase.png) 
+
     1. In the **Subject**, enter 'Approve Purchase Order', and choose the purchase order from purchaseform.
     2. Under the **Recipients** -> **Users**, choose **Process Started By** from Process Metadata.
 
      ![](./images/general.png) 
 
-9. In Approval, choose **Input** tab.
+9. In Approval, choose **Inputs** tab.
     1. In **Purchase Order**, choose **purchase order** from the form .
     2. Choose **Save**
 
