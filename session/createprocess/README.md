@@ -14,9 +14,12 @@
 
 4. Enter Project Name **Purchase Managers** and choose **Create**.
 > Please append a unique random number at the end of Project name to avoid duplication error.
+
 ![](./images/projectname.png)
 
-5. In the create process popup, enter **startprocess** in the Name field and choose **Create**.
+5. Please wait until the created project opens up in a new tab.
+
+6. In the create process popup, enter **startprocess** in the Name field and choose **Create**.
 
 ![](./images/createprocess.png)
 
