@@ -25,7 +25,7 @@
 
 ## 3. Review PO Status in Purchase Order CAP Application.
 
-1. Open [CAP Application](https://referenceapps-buil-code-siqi7j0t-dev-customer-srv.cfapps.us10-001.hana.ondemand.com/$fiori-preview/purchaseOrderAppSrv/PurchaseOrders#preview-app&/?sap-iapp-state=TASNVTQ5GSZP64MFYFGSHYYU6YQCPN43JB0KAS7HI) and filter with your PO. Click **GO**.
+1. Open [CAP Application](https://referenceapps-buil-code-siqi7j0t-dev-customer-srv.cfapps.us10-001.hana.ondemand.com/$fiori-preview/purchaseOrderAppSrv/PurchaseOrders#preview-app&/?sap-iapp-state=TASG6MOL2NPGLG2I5H6YG88G19H4PRHK9RMNC2YB3) and filter with your PO. Click **GO**.
 ![](./images/caplist.png)
 
 2. Review status in detail page as well.
