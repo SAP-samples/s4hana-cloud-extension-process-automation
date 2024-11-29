@@ -12,7 +12,7 @@
         "ach": "CA-UI5-FE",
         "dataSources": {
             "mainService": {
-                "uri": "sales/",
+                "uri": "odata/v4/sales/",
                 "type": "OData",
                 "settings": {
                     "annotations": [
@@ -102,7 +102,7 @@
         "routing": {
             "routes": [
                 {
-                    "pattern": "",
+                    "pattern": ":?query:",
                     "name": "NotificationList",
                     "target": [
                         "NotificationList"

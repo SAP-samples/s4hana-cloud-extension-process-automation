@@ -69,19 +69,46 @@ module.exports = async (srv) => {
       req.error({ code: '400', message: "Cannot mark as COMPLETED. Please change to VERIFIED", numericSeverity: 2, target: 'verificationStatus_code' });
     }
   });
+
+  srv.before("UPDATE", "Addresses.drafts", req => {
+    // To set whether address is Edited
+    req.data.isModified = true;
+  });
+
+  srv.after("PATCH", "Addresses", async (data, req) => {
+    console.log("Received address in PATCH", data);
+    let isValidPinCode = true;
+    if(data && data.postalCode){
+      isValidPinCode = await validatePostcode(data);
+    }
+    
+    if(!isValidPinCode) {
+      return req.error({ code: '400', message: "invalid postal code", numericSeverity: 2, target: 'postalCode' });
+    }
+  });
  
   async function emitEvent(result) {
-    const resultJoin = await cds.run(SELECT.one("my.businessPartnerValidation.Notifications as N").leftJoin("my.businessPartnerValidation.Addresses as A").on("N.businessPartnerId = A.businessPartnerId").where({ "N.ID": result.ID }));
+    //const resultJoin = await cds.run(SELECT.one("my.businessPartnerValidation.Notifications as N").leftJoin("my.businessPartnerValidation.Addresses as A").on("N.businessPartnerId = A.businessPartnerId").where({ "N.ID": result.ID }));
+    const resultJoin = await cds.run(
+      SELECT.one(Notifications, notification => {
+          notification('*'),
+          notification.addresses((addresses) => {
+              addresses('*')
+            });
+        })
+        .where({"ID": result.ID})
+    )
+    const addressResult = resultJoin.addresses[0];
     const statusValues = { "N": "NEW", "P": "PROCESS", "INV": "INVALID", "V": "VERIFIED" }
 
-    if (resultJoin.isModified) {
+    if (addressResult && addressResult.isModified) {
       let payload = {
-        streetName: resultJoin.streetName,
-        postalCode: resultJoin.postalCode
+        streetName: addressResult.streetName,
+        postalCode: addressResult.postalCode
       }
 
       log.info("<<<<payload address", payload)
-      let res = await bupaSrv.run(UPDATE(BusinessPartnerAddress).set(payload).where({ businessPartnerId: resultJoin.businessPartnerId, addressId: resultJoin.addressId }))
+      let res = await bupaSrv.run(UPDATE(BusinessPartnerAddress).set(payload).where({ businessPartnerId: resultJoin.businessPartnerId, addressId: addressResult.addressId }))
         .catch(err => log.error(err));
       log.info(`address update to S/4 Backend system`, res);
     }
