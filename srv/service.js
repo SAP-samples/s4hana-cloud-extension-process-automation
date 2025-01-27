@@ -129,7 +129,7 @@ module.exports = async (srv) => {
       "suppliername": resultJoin.businessPartnerName,
       "paymentisblock": false,
       "purchaseisblock": false,
-      "country": resultJoin.country  
+      "country": addressResult.country  
       }    
     }
 
