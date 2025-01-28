@@ -55,7 +55,7 @@ Now we will setup the SAP Business Application Studio and use it to develop our 
     - Choose **Environments**
        ![Open Workspace](./images/control_tower_env.png)
     - Choose **Public**
-    - Choose **Unattended Triggers** tab.
+    - Choose **Triggers** tab.
     - Choose **Supplier API** -> click on **Action** (**...**) -> choose **view**
       ![Open Workspace](./images/supplier-api.png)
       ![Open Workspace](./images/api_view.png)
