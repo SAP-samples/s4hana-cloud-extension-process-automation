@@ -1,0 +1,46 @@
+{
+  "name": "purchase",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@cap-js/sqlite": "^1.8.0",
+    "@sap/cds": "^8",
+    "@sap/low-code-event-handler": "^1.2.5",
+    "express": "^4",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@cap-js/cds-types": "^0.8.0",
+    "@sap/cds-dk": "^8"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "cds": {
+    "server": {
+      "index": true
+    },
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "impl": "@cap-js/sqlite",
+        "credentials": { "url": "db.sqlite" },
+        "schema_evolution": "auto"
+      },
+      "app-service": {
+        "impl": "@sap/low-code-event-handler"
+      },
+      "auth": {
+        "[development]": {
+          "kind": "dummy"
+        },
+        "[production]": {
+          "kind": "dummy"
+        }
+      }
+    }
+  }
+}

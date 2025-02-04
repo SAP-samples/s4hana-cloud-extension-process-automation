@@ -1,0 +1,12 @@
+{
+    "version": "2.0",
+    "codes": [],
+    "configuration": {
+        "phase": "on",
+        "events": [
+            "UPDATE"
+        ],
+        "entity": "purchaseOrderAppSrv.PurchaseOrders"
+    },
+    "hash": "31f7e633151d07775d26c613332d64b7ada9d04762440d429bcdf116cd91f9123ac11c3d4ea9a4d67cd213f7fa52082a9dbafaa6ff7f899865731194cfc62afd"
+}
