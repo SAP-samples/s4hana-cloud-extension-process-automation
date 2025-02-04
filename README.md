@@ -2,6 +2,8 @@
 
 Welcome to your new project.
 
+cds compile srv --service all -o docs --to openapi
+
 It contains these folders and files, following our recommended project layout:
 
 File or Folder | Purpose
