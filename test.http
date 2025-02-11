@@ -1,17 +1,14 @@
 
 
-###
-GET https://sa0176014160-h9hk2lcrpj-3s4zd-dcbuild-purchase-srv.cfapps.ap10.hana.ondemand.com/service/purchaseOrderApp/PurchaseOrders
+### Fetch the PO
+GET https://<subdomain>-dcbuild-purchase-srv.cfapps.ap10.hana.ondemand.com/service/purchaseOrderApp/PurchaseOrders
 ###
 
-####
-
-POST https://sa0176014160-h9hk2lcrpj-3s4zd-dcbuild-purchase-srv.cfapps.ap10.hana.ondemand.com/service/purchaseOrderApp/updatespo
+#### Call Actions updatespo to update the PO Status
+POST https://<subdomain>-purchase-srv.cfapps.ap10.hana.ondemand.com/service/purchaseOrderApp/updatespo
 Content-Type: application/json
-
 {
 "po":"PO-008",
 "status":"Completed by Syed"
 }
-
 ###
