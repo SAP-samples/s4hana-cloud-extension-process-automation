@@ -23,30 +23,31 @@
 
     ![](./images/open_editor.png)
 
-6. Choose **Text** from the layout. in the text, Enter **Status with Comment**.
+6. Choose **Text** from the layout. In the text box, enter **Status with Comment**.
 7. In the Configuration, choose **Required**.
 8. Save the Approval.
 
     ![](./images/text.png) 
 
 
-9. Click on ApprovePurchase, and choose **General** tab
+9. Go back to the **startprocess** tab, click on ApprovePurchase, which opens General tab.
     
-    ![](./images/approver_purchase.png) 
+    ![](./images/sp_2.png) 
 
+10. Under general tab, do the following:
     1. In the **Subject**, enter 'Approve Purchase Order', and choose the purchase order from purchaseform.
     2. Under the **Recipients** -> **Users**, choose **Process Started By** from Process Metadata.
 
         ![](./images/general.png) 
 
-10. In Approval, choose **Inputs** tab.
+11. In Approval, choose **Inputs** tab.
     1. In **Purchase Order**, choose **purchase order** from the form .
     2. Choose **Save**
 
-    ![](./images/input.png) 
+        ![](./images/input.png) 
 
-## You have now completed the development of Approvals.
+### You have now completed the development of Approvals.
 
-## Next: [Add CAP Nodejs Action inside SPA](../action/README.md)
+## Next Step: [Add CAP Nodejs Action inside SPA](../action/README.md)
 
 

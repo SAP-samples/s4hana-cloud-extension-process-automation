@@ -19,17 +19,17 @@
 1. From the lobby, Open **My Inbox**.
 ![](./images/chooseinbox.png)
 
-2. You will see the task in inbox.**Start with Comment** field, enter Approval text (add some unique description after that).
+2. You will see the task in inbox. In the Approval form, enter approval text in **Start with Comment** field (add some unique description after that).
 3. Choose **Approve**.
 ![](./images/approve.png)
 
 ## 3. Review PO Status in Purchase Order CAP Application.
 
-1. Open [CAP Application](https://referenceapps-buil-code-siqi7j0t-dev-customer-srv.cfapps.us10-001.hana.ondemand.com/$fiori-preview/purchaseOrderAppSrv/PurchaseOrders#preview-app&/?sap-iapp-state=TASG6MOL2NPGLG2I5H6YG88G19H4PRHK9RMNC2YB3) and filter with your PO. Click **GO**.
+1. Open [CAP Application](https://hands-on.launchpad.cfapps.eu10.hana.ondemand.com/f1d6d6bf-87c6-480b-8b4e-6ee152fe96aa.purchase.nspurchase-0.0.1/index.html) and filter with your PO. Click **GO**.
 ![](./images/caplist.png)
 
 2. Review status in detail page as well.
-![](./images/capdetail.png)
+![](./images/output.png)
 
 
 
