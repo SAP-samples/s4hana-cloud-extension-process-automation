@@ -32,6 +32,6 @@ The goal is to cover all the necessary steps to consume the CAP Service API func
     | **Step 2**: [Test the Dropdown Filtering in the Form](./s4hane2e/README.md) |
 
 
-## Sart Discovery Center Mission.
+## Start the Discovery Center Mission.
 
 Start the [SAP Discovery Center Mission](https://discovery-center.cloud.sap/missiondetail/4163/4406).
