@@ -2,23 +2,23 @@
 
 1. In the startprocess, click on **Add a Trigger**.
 
-    ![](./images/add_a_trigger.png)
+    ![form](./images/add_a_trigger.png)
 
 2. Click on **Submit a Form**.
 
-    ![](./images/submit_a_form.png)
+    ![form](./images/submit_a_form.png)
 
 3. Choose **Blank Form**
 
-    ![](./images/blank%20form.png)
+    ![form](./images/blank%20form.png)
 
 4. Enter **purchaseform** as the Name of the Form and choose **Create**.
 
-    ![](./images/create_form.png)
+    ![form](./images/create_form.png)
 
 5. Choose **Open Editor**
 
-    ![](./images/open_editor.png)
+    ![form](./images/open_editor.png)
 
 #### Now you are inside Form Editor. Lets add the component by drag and drop.
 
@@ -36,7 +36,9 @@
 
     ![](./images/fillform.png)
 
-## You have now completed the Trigger Form.
+**You have now completed the Trigger Form.**
 
-## Next: [Build a Purchase Order Approval](../approval/README.md)
+## Next Step
+
+[Build a Purchase Order Approval](../approval/README.md)
 

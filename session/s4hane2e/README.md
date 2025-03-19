@@ -9,3 +9,5 @@
 3. Select the dropdown button for the **Customer Name** field. You can see all the customer names fetched by the action project from the **SAP S/4HANA System**.
 
 ![](./images/drop.png)
+
+**Congratulations! You have successfully completed the Section 2 of integrating S/4HANA in SAP Build Process Automation**

@@ -12,12 +12,13 @@ The goal is to cover all the necessary steps to consume the CAP Service API func
 
     |    | 
     | ----------- |
-    | **Step 1**: [Create Project](./createprocess/README.md) |
-    | **Step 2**: [Build a Purchase Order Form](./form/README.md) |
-    | **Step 3**: [Build a Purchase Order Approvals](./approval/README.md)  |
-    | **Step 4**: [Add CAP Nodejs Action inside SPA](./action/README.md)|
-    | **Step 5**: [Release and Deploy the Project](./deploy/README.md) |
-    | **Step 6**: [Run End to End Scenario](./e2e/README.md) |
+    | **Step 1**: [Prerequisites](./prerequisites/README.md) |
+    | **Step 2**: [Create Project](./createprocess/README.md) |
+    | **Step 3**: [Build a Purchase Order Form](./form/README.md) |
+    | **Step 4**: [Build a Purchase Order Approvals](./approval/README.md)  |
+    | **Step 5**: [Add CAP Nodejs Action inside SPA](./action/README.md)|
+    | **Step 6**: [Release and Deploy the Project](./deploy/README.md) |
+    | **Step 7**: [Run End to End Scenario](./e2e/README.md) |
 
 ##  Section 2: Learn how to integrate SAP S/4HANA inside SAP Build Process Automation.
 
