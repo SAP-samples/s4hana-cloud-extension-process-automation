@@ -14,9 +14,9 @@
 
     2. Leave the **Type** as **HTTP** by default.
 
-    3. URL becomes **<s4hana-system-url>/sap/opu/odata/sap/API_BUSINESS_PARTNER**
+    3. URL becomes **s4hana-system-url/sap/opu/odata/sap/API_BUSINESS_PARTNER**
 
-        > Note: <s4hana-system-url> is the S/4HANA Cloud System.
+        > Note: *s4hana-system-url* is the S/4HANA Cloud System.
 
     4. Leave the **Proxy Type** as **Internet** by default.
 
@@ -44,6 +44,6 @@
 
     ![destination](./images/destination-s4hana/check_connection.png)
 
-3. You will get a pop up with Connection to "cap-app" established.
+3. You will get a pop up with Connection to "S4HANA" established.
 
     ![destination](./images/destination-s4hana/connection_established.png)

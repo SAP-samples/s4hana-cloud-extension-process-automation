@@ -30,9 +30,9 @@ Deploy the Purchase Order CAP Application using [Deployment of CAP Application](
 
 4. Drag and drop or click Browse Files to upload open specification file downloaded in step above.
 
-5. Choose **Next**.
+    ![action](./images/createaction/file_upload.png)
 
-    ![action](./images/createaction/select_api.png)
+5. Choose **Next**.
 
 6. In the Create an **Action project** popup:
 

@@ -27,7 +27,7 @@
             > [!Note] 
             > **CAP application must be already deployed using [Deployment of CAP Application](./deployment.md)**
 
-        3. URL becomes **<application-route>/service/purchaseOrderApp**
+        3. URL becomes **application-route/service/purchaseOrderApp**
 
             > Note: Appending the /service and the service name purchaseOrderApp.
     
