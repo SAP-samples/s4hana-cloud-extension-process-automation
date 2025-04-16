@@ -2,25 +2,33 @@
 
 This Processes will automate the onboarding of supplier created from supplier request form in SAP S/4HANA.
 
-1. Open SAP Build and choose **Lobby**. Then, choose **Create**.
+1. Open **SAP Build Lobby**.
 
-    ![spa business create](./images/spa_start.png)
+2. Click on **Create** from the *Create* dropdown.
 
-2. Choose **Build an Automated Process**.
+    ![project](./images/new-create.png)
 
-   ![spa business create](./images/spa_build.png)
+3. In the Create Project dialog box, under **Objective**, choose an **Automated Process** and click on **Next**.
 
-3. Choose **Business Process**
+    ![project](./images/[new]process.png)
 
-   ![spa business create](./images/automation_type.png)
+4. Under **Type**, select the development configuration as **Process**, and click on **Next**.
 
-4. In the **Create a Business Process** dialog box, do the following:
+    ![project](./images/[new]process1.png)
 
-   - In the **Project Name** field, enter **Supplier Approval and Creation in SAP S/4HANA**.
-   - In the **Short Description**, enter **Supplier Approval in SAP S/4HANA**.
-   - Choose **Create**. The **Create Process** wizard appears.
+5. Under **Name** tab, do the following:
 
-   ![spa business create](./images/process_creat.png)
+   - In the **Name** field, enter **Supplier Approval and Creation in SAP S/4HANA**.
+   - In the **Description**, enter **Supplier Approval in SAP S/4HANA**.
+   - Click on **Review**.
+
+        ![project](./images/new-processname.png)
+
+6. In the **Summary** page, review the *Objective, Type and name* given in the previous steps and click on **Create**.
+
+    ![project](./images/new-review.png)
+
+7. The Create Process wizard appears.
 
 ## 2. Create a business process
 
