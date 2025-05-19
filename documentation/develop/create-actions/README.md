@@ -191,15 +191,17 @@ You will now release the action project to create version(s) and then publish a 
 
 Once the action project is released, you can the publish any release version of the action by choosing **Publish to Library** .
 
-1. Open SAP Build and choose **Actions** under **Connectors** on the left panel. Then, choose your actions **businesspartner**.
+1. Open SAP Build and choose **Actions** under **Connectors** on the left panel. Then, navigate to your actions **businesspartner**.
 
-2. Choose three dots.
+2. Click on Versions
 
-3. Choose **Publish to Library**
+3. Choose three dots corresponding to the respective version under the Released section
+
+4. Choose **Publish to Library**
 
     ![action create](./images/publish.png)
 
-4. Choose **Publish**.
+5. Choose **Publish**.
 
     ![action create](./images/actions_publish_final.png)
 

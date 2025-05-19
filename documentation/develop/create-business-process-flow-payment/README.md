@@ -126,7 +126,7 @@ Once the supplier has been verified by the BusinessParnerValidation application,
 
 1. From the Overview, go to process **SupplierPaymentUnblock** created earlier. In the **Trigger** module, choose **Add a Trigger**.
    ![spa business create](./images/add_a_trigger.png)
-2. Choose **Call an API**
+2. Choose **API Trigger**
    ![spa business create](./images/trigger_api.png)
    
 3. In the **Create API Trigger** wizard, configure the following properties:
