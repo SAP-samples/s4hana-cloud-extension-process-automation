@@ -126,42 +126,43 @@ Once the supplier has been verified by the BusinessParnerValidation application,
 
 1. From the Overview, go to process **SupplierPaymentUnblock** created earlier. In the **Trigger** module, choose **Add a Trigger**.
    ![spa business create](./images/add_a_trigger.png)
-2. Choose **API Trigger**
+   
+3. Choose **API Trigger**.
    ![spa business create](./images/trigger_api.png)
    
-3. In the **Create API Trigger** wizard, configure the following properties:
+4. In the **Create API Trigger** wizard, configure the following properties:
     - In the **Name** field, enter **supplierAPI**.
     - In the **Description** field, enter **Supplier Trigger API**.
     - Choose **Create**
       ![spa business create](./images/create_trigger.png)
 
-4. In branch of the **Trigger** module, 
+5. In branch of the **Trigger** module, 
    - Choose **+**
    - Choose **Decision**
       ![spa business create](./images/select_decision.png)
    - Choose **Central Block Rule**
       ![spa business create](./images/select_rule_decision.png)
 
-5. In the **Central Block Rule** decision, Choose **Inputs** tab and bind the below items.
+6. In the **Central Block Rule** decision, Choose **Inputs** tab and bind the below items.
    - Select **Single Properties**.
    - In the country field, choose **country** from **Process Inputs**.
    ![spa business create](./images/map_process_inputs.png)
    
-6. Choose **+** sign in decision branch after **Central Block Rule**.
+7. Choose **+** sign in decision branch after **Central Block Rule**.
 
-7. Choose **Approval**, and under Available Approvals, select **SupplierPaymentApproval**.
+8. Choose **Approval**, and under Available Approvals, select **SupplierPaymentApproval**.
 
    ![spa business create](./images/approval_selection.png)
    ![spa business create](./images/supplier_approval_selection.png)
    
-8. In the Supplier Approval approval form, Under Reject side choose **+** icon. And choose **Controls and Events**.
+9. In the Supplier Approval approval form, Under Reject side choose **+** icon. And choose **Controls and Events**.
    ![spa business create](./images/controls_event.png)
 
-9. Under **Flow logic** choose End.
+10. Under **Flow logic** choose End.
 
    ![spa business create](./images/end.png)
 
-10. In the **SupplierPaymentApproval** approval, choose **General** tab and Bind the below items.
+11. In the **SupplierPaymentApproval** approval, choose **General** tab and Bind the below items.
 
       - In the **Subject** field, enter **Enable Payment and Purchase to Supplier** and click **suppliername** from **Process Inputs**
       - In the **Priority** field, choose **Medium**.
@@ -169,44 +170,44 @@ Once the supplier has been verified by the BusinessParnerValidation application,
 
          ![spa business create](./images/process-approval-general.png)
    
-11. In the **SupplierPaymentApproval** approval, choose **Input** tab and Bind the below items.
+12. In the **SupplierPaymentApproval** approval, choose **Input** tab and Bind the below items.
 
       - In the **Supplier ID** field, choose **supplier** from **Process Inputs**.
       - In the **Supplier Name** field, choose **suppliername** from **Process Inputs**.
 
          ![spa business create](./images/process-approval-input.png)
    
-12. In the **SupplierPaymentApproval** approval, choose **+** from **Approve** branch side.
+13. In the **SupplierPaymentApproval** approval, choose **+** from **Approve** branch side.
 
-13. Choose **Action**, which opens **Browse Library**.
+14. Choose **Action**, which opens **Browse Library**.
 
       ![spa business create](./images/action_selection.png)
    
-14. In the **Projects** , enter **businesspartner**. 
+15. In the **Projects** , enter **businesspartner**. 
 
-15. choose Actions **Updates supplier general data** and choose **Add**.
+16. choose Actions **Updates supplier general data** and choose **Add**.
 
       ![spa business create](./images/browse_lib.png)
    
-16. In the actions **Updates supplier general data**, choose **General** tab. 
+17. In the actions **Updates supplier general data**, choose **General** tab. 
 
-17. In the **Destination Variable** field, choose **bupa** .
+18. In the **Destination Variable** field, choose **bupa** .
 
       ![spa business create](./images/select_dest.png)
 
-18. Choose **Inputs** tab, select **Single Properties**.
+19. Choose **Inputs** tab, select **Single Properties**.
 
       - In the **PaymentBlockedForSupplier** field, choose **paymentIsBlock** from **Process Inputs**.
       - In the **PurchasingIsBlocked** field, choose **purchaseIsBlock** from **Process Inputs**.
       > In updated api spec, updated name of PaymentBlockedForSupplier is Payment block, PurchasingIsBlocked is Purch. Block
 
-19. In the **Supplier** field, choose **supplier** from **Process Inputs**.
+20. In the **Supplier** field, choose **supplier** from **Process Inputs**.
 
-20. Choose **Save**.
+21. Choose **Save**.
 
       ![spa business create](./images/process_action_paym.png)
 
-21. Your final Process look like below.
+22. Your final Process look like below.
 
       ![spa business create](./images/final_flow.png)
 
