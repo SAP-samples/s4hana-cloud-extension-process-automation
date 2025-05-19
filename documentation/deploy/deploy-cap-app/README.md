@@ -58,7 +58,6 @@ Now we will setup the SAP Business Application Studio and use it to develop our 
     - Choose **Triggers** tab.
     - Choose **Supplier API** -> click on **Action** (**...**) -> choose **view**
       ![Open Workspace](./images/supplier-api.png)
-      ![Open Workspace](./images/api_view.png)
 
 2. In the **View SupplierApi Details** dialog box, copy the **definitionId**.
 
