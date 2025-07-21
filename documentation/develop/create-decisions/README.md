@@ -99,7 +99,7 @@ A decision consists of one or more policies. Each policy consists of a collectio
 
 9. Then, you will create the actual decision-making parts that make the decision in the process. Under **Central Block Rule**, choose **Rules**.
 
-10. Choose **Add Rule**.
+10. Choose **Create Rule**.
 
     ![Block create](./images/Add_rule.png)
 
