@@ -216,7 +216,7 @@ Once the action project is released, you can the publish any release version of 
 
 2. Choose the **Test** tab.
 
-3. In the **Host** field, choose **Destination**.
+3. In the **Connectivity** field, choose **Destination**.
 
 4. In the **Destination** dropwdown menu, choose **bupa**.
 
