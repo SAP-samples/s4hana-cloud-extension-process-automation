@@ -10,13 +10,17 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
     ![action create](./images/destination_tile.png)
 
-3. Choose **New Destination**.
+3. Choose **Add**.
 
-4. Choose **bupa**.
+4. Search for **bupa** & choose **bupa**.
+   
+5. Choose **Next**.
 
-5. Choose **Add**.
+   ![action create](./images/create_destination.png)
 
-    ![action create](./images/create_destination.png)
+7. Choose **Add Destination**.
+
+    ![action create](./images/create_destination1.png)
 
 ## 2. Create Action Project
 
@@ -28,7 +32,7 @@ Action is one of the feature in SAP Process Automation. Action is a mean to conn
 
     ![action create](./images/create_action3.png)
 
-3. In the popup **Browse SAP Business Accelerator Hub**, Choose **SAP S/4HANA**.
+3. In the popup **Browse SAP Business Accelerator Hub**, Choose **SAP S/4HANA** > Choose **SAP S/4HANA**
 
     ![action create](./images/create_action4.png)
 
