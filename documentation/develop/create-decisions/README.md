@@ -77,7 +77,7 @@ A decision consists of one or more policies. Each policy consists of a collectio
 
 3. In the **Central Block Rule** section, select the **Inputs/Output** tab. 
 
-4. Choose **Add Input Parameter** to configure the input.
+4. Choose **Create Input Parameter** to configure the input.
 
 5. Configure the input parameter:
     - In the **Name** field, enter **Input**
@@ -86,7 +86,7 @@ A decision consists of one or more policies. Each policy consists of a collectio
 
     ![Block create](./images/Block_rule_input.png)
 
-6. Choose **Add Output Parameter** to configure the output.
+6. Choose **Create Output Parameter** to configure the output.
 
 7. Configure Output Parameter:
     - In the **Name** field, enter **Output**
@@ -113,7 +113,7 @@ A decision consists of one or more policies. Each policy consists of a collectio
 
 12. You will now configure the conditions. Under **Vocabulary**:
     - Select **Input** data type.
-    - From the dropdown, choose the input **Country**.
+    - Choose the input **Country**.
     - In the **Operator (Optional)** dropdown, choose **EXISTIN**.
     - Choose **Next Step**. You will be navigated to the **Configure Results**.
 
@@ -121,7 +121,6 @@ A decision consists of one or more policies. Each policy consists of a collectio
 
 13. Configure the output or result of the decision table. Under Result **Vocabulary**:
     - Choose **Output** data type
-    - From the dropdown, choose **Output**
     - Choose **Next Step**.
 
     ![Block create](./images/decision_rules_output_cond.png)
@@ -131,8 +130,6 @@ A decision consists of one or more policies. Each policy consists of a collectio
     ![Block create](./images/Add_rule_review_step.png)
 
 15. In the newly created **Decision Table**, add values to condition and result columns.
-
-    - Choose **Add Row** > **Insert First**
 
     - In the **if country.Country EXISTSIN** field, enter **[ 'US' , 'IN' , 'DE' ]**.
 
