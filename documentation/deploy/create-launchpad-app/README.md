@@ -10,7 +10,7 @@ In this section, the application will be connected to Central Fiori Launchpad to
 
 1.  Open your Subaccount and search for *Instances and Subscriptions*
 2.  Search for the application *SAP Build Work Zone, standard edition* and click on icon to open
-3.  Now are on the home page of Launchpad Service. In the menu on the left side click on the icon for *Channel Manager*
+3.  Now are on the home page of Launchpad Service. In the menu on the left side click on the icon for **Channel Manager**
 4.  Click on the refresh icon to fetch the updated content
 
     <img src="https://raw.githubusercontent.com/SAP-samples/cloud-extension-s4hana-business-process/mission/mission/create-launchpad-app/images/integrate_launchpad_1.png" width="80%"> 
