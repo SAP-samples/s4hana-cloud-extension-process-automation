@@ -180,11 +180,13 @@ Once the supplier has been verified by the BusinessParnerValidation application,
    
 13. In the **SupplierPaymentApproval** approval, choose **+** from **Approve** branch side.
 
-14. Choose **Action**, which opens **Browse Library**.
+14. Choose **Action** > Choose **Browse All Actions**.
 
       ![spa business create](./images/action_selection.png)
+      ![spa business create](./images/browse.png)
    
-15. In the **Projects** , enter **businesspartner**. 
+15. In the **Projects** field, enter **businesspartner**. > Choose **Show Filters** to see the **Projects field**
+      ![spa business create](./images/show_filter.png)
 
 16. choose Actions **Updates supplier general data** and choose **Add**.
 
@@ -230,7 +232,8 @@ Once the supplier has been verified by the BusinessParnerValidation application,
 
 ## 7. Deploy the Process   
 
-1. Choose **Deploy**.
+1. Select the **Release version** > Choose **Deploy**.
+      ![spa business create](./images/released_version.png)
 
 2. Choose **Public** and click on **Deploy**.
 
