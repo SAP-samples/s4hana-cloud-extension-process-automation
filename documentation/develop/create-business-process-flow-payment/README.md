@@ -60,6 +60,7 @@ This process will unblock the supplier onboarded in SAP S/4HANA to make payments
       ![spa business create](./images/create_env.png)
 
 5. In the **Process Details** section, choose **Variables** tab.
+    ![spa business create](./images/process_details.png)                                                                                              
 
 6. Choose **Configure** for **Process Inputs**.
 
