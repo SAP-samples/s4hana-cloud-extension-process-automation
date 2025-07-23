@@ -352,13 +352,15 @@ To run the process you have to first release and then deploy the business proces
 
 ## 9. Deploy Business Process
 
-1. Choose **Deploy**.
+1. Select the **Release version** > Choose **Deploy**.
 
+   ![spa process](./images/released_version.png)
+   
 2. Choose **Public** and click on **Deploy**.
 
     ![spa process](./images/choose_environment.png)
 
-2. In the **Define Variables** dialog box, do the following:
+3. In the **Define Variables** dialog box, do the following:
 
     - Choose **Set new value**
     - In the **Destination** dropdown, choose **bupa**.
