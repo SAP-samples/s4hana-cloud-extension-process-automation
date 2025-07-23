@@ -233,15 +233,16 @@ Once the supplier has been verified by the BusinessParnerValidation application,
 ## 7. Deploy the Process   
 
 1. Select the **Release version** > Choose **Deploy**.
-      ![spa business create](./images/released_version.png)
 
-2. Choose **Public** and click on **Deploy**.
+   ![spa business create](./images/released_version.png)
+
+3. Choose **Public** and click on **Deploy**.
 
     ![spa process](./images/choose_environment.png)
 
-3. In **Effect on Triggers** pop-up, click on **Deploy**.
+4. In **Effect on Triggers** pop-up, click on **Deploy**.
 
-4. In the **Define Variables** dialog box, do the following:
+5. In the **Define Variables** dialog box, do the following:
 
     - Choose **Set new value**
     - In the **Destination** dropdown, choose **bupa**.
