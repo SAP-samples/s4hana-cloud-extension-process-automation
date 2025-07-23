@@ -321,14 +321,11 @@ A process condition routes the business process based on certain criteria. These
     - In the **Payment Block**, choose **BusinessPartnerIsBlocked** of actions **create a new business partner record**.
     - In the **Postal Code** field, choose **Postal Code** from **Supplier Request Form (Trigger)**.
     - In the **Purchase Block** field, choose **BusinessPartnerIsBlocked** of actions **create a new business partner record**.
-
-        ![spa process](./images/supplier_inputs.png)
-
     - In the **Street** field, choose **Street** from **Supplier Request Form (Trigger)**.
     - In the **Supplier** field, choose **BusinessPartner** from Actions **create a new business partner record**.
     - In the **Supplier Name** field, choose **Supplier Name** from **Supplier Request Form (Trigger)**.
 
-        ![spa process](./images/supplier_inputs1.png)
+        ![spa process](./images/supplier_inputs.png)       
 
 21. Below is the final layout of editor.
         ![spa process](./images/final_output.png)
