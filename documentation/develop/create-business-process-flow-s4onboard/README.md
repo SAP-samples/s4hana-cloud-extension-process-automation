@@ -182,8 +182,6 @@ After the user approves or rejects the request, the next step is to create notif
 
     ![spa confirm](./images/spa-supp-conf-form-final1.png)
 
-    ![spa confirm](./images/spa-supp-conf-form-final2.png)
-
 7. Choose **Save**.
 
 ## 7. Create Process
@@ -240,23 +238,28 @@ A process condition routes the business process based on certain criteria. These
 
         ![spa process](./images/supplier_input.png)
 
-9. In branch of the **Approve** of **Supplier Approval Form** module, choose **+**. Then, choose **Actions** which opens **Browse library**.
+9. In branch of the **Approve** of **Supplier Approval Form** module, choose **+**. Then, choose **Actions** >  **Browse All Actions**.
 
     ![spa process](./images/select_action.png)
 
-10. In the **Projects** field, enter **businesspartner**.
+    ![spa process](./images/browse.png)
 
-11. Choose actions **Create a new business partner record** and choose **Add**.
+11. In the **Projects** field, enter **businesspartner**.
+        - Choose **Show Filters** to see the **Projects** field
+    
+    ![spa process](./images/show_filter.png)
+
+13. Choose actions **Create a new business partner record** and choose **Add**.
 
     ![spa process](./images/create_new_add.png)
 
-12. In the action **Create a new business partner record** ,choose **General**.
+14. In the action **Create a new business partner record** ,choose **General**.
 
     - In the **Destination Variable** field, choose **bupa**.
 
       ![spa process](./images/link_bupa.png)
 
-13. In the action **Create a new business partner record** ,choose **Inputs** and bind the below items.
+15. In the action **Create a new business partner record** ,choose **Inputs** and bind the below items.
 
     - In the **BusinessPartnerIsBlocked** field, choose **Central Block** from **Central Block Rule** of **Process Content**.
     - In the **OrganizationBPName1** field, choose **Supplier Name** from **Supplier Request Form (Trigger)** of **Process Content**.
@@ -273,16 +276,16 @@ A process condition routes the business process based on certain criteria. These
 
         ![spa process](./images/inputs_create_new1.png)
 
-14. In branch of the action **Create a new business partner record** module, choose **+**. Then, choose **Action** which opens **Browse library** and choose **Add** for **Update Supplier General Data** action.
+16. In branch of the action **Create a new business partner record** module, choose **+**. Then, choose **Action** which opens **Browse library** and choose **Add** for **Update Supplier General Data** action.
 
     ![spa process](./images/spa-process-action-lib-supplier-patch.png)
  
-15. In the action **Update Supplier General Data**, choose **General**.
+17. In the action **Update Supplier General Data**, choose **General**.
     - In the **Destination Variable** field, choose **bupa**.
 
         ![spa process](./images/link_bupa1.png)
 
-16. In the action **Update Supplier General Data**, choose **Input**.
+18. In the action **Update Supplier General Data**, choose **Input**.
     - In the **Supplier** field, choose **BusinessPartner** of actions **create a new business partner record**.
     - In the **PaymentBlockedForSupplier**, choose **BusinessPartnerIsBlocked** from **Central Block Rule**
     - In the **PurchasingIsBlocked**, choose **BusinessPartnerIsBlocked** from **Central Block Rule**
@@ -291,11 +294,11 @@ A process condition routes the business process based on certain criteria. These
 
     ![spa process](./images/Inputs_update.png)
 
-17. In the action **Update Supplier General Data** module, choose **+** sign > **Form** > **Supplier Confirmation**.
+19. In the action **Update Supplier General Data** module, choose **+** sign > **Form** > **Supplier Confirmation**.
 
     ![spa process](./images/updates_add_form.png)
 
-18. In the form **Supplier Confirmation** module ,choose **General** and bind the below items.
+20. In the form **Supplier Confirmation** module ,choose **General** and bind the below items.
 
     - In the **Subject** box:
         - enter **New Supplier**
@@ -307,7 +310,7 @@ A process condition routes the business process based on certain criteria. These
 
         ![spa process](./images/supplier_confirmation.png)
 
-19. In the form **Supplier Confirmation** module ,choose **Inputs** and bind the below items.
+21. In the form **Supplier Confirmation** module ,choose **Inputs** and bind the below items.
 
     - In the **Central Block** field, choose **BusinessPartnerIsBlocked** of actions **create a new business partner record**.
       > just to note that in updated api specification BusinessPartnerIsBlocked is renamed as **CentralBlock**.
@@ -325,10 +328,10 @@ A process condition routes the business process based on certain criteria. These
 
         ![spa process](./images/supplier_inputs1.png)
 
-20. Below is the final layout of editor.
+22. Below is the final layout of editor.
         ![spa process](./images/final_output.png)
 
-21. Choose **Save**.
+23. Choose **Save**.
 
 ## 8.Release Business Process
 
