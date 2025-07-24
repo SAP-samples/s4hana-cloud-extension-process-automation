@@ -278,7 +278,7 @@ A process condition routes the business process based on certain criteria. These
 
         ![spa process](./images/inputs_create_new1.png)
 
-15. In branch of the action **Create a new business partner record** module, choose **+**. Then, choose **Action** which opens **Browse library** and choose **Add** for **Update Supplier General Data** action.
+15. In branch of the action **Create a new business partner record** module, choose **+**. Then, choose **Action** > Choose **Browse All Actions**.  and choose **Add** for **Update Supplier General Data** action.
 
     ![spa process](./images/spa-process-action-lib-supplier-patch.png)
  
