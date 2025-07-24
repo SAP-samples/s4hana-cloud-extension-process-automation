@@ -233,7 +233,7 @@ Once the supplier has been verified by the BusinessParnerValidation application,
 
 ## 7. Deploy the Process   
 
-1. Select the **Release version** > Choose **Deploy**.
+1. Select the **Released version** > Choose **Deploy**.
 
    ![spa business create](./images/released_version.png)
 
