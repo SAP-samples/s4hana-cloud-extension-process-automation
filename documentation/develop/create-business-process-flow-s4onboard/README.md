@@ -352,7 +352,7 @@ To run the process you have to first release and then deploy the business proces
 
 ## 9. Deploy Business Process
 
-1. Select the **Release version** > Choose **Deploy**.
+1. Select the **Released version** > Choose **Deploy**.
 
    ![spa process](./images/released_version.png)
    
