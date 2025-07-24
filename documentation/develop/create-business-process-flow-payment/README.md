@@ -186,6 +186,7 @@ Once the supplier has been verified by the BusinessParnerValidation application,
       ![spa business create](./images/browse.png)
    
 15. In the **Projects** field, enter **businesspartner**. > Choose **Show Filters** to see the **Projects field**
+      
       ![spa business create](./images/show_filter.png)
 
 16. choose Actions **Updates supplier general data** and choose **Add**.
